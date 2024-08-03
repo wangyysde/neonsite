@@ -1,0 +1,120 @@
+{{ define "main" }}
+<style type="text/css">
+   .hi3_number {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      background-image: url('/images/customization/customization_bg_number.png');
+      background-size: 768px 60px;
+   }
+
+   .hi3_number.number1 {
+      background-position: -30px -66px;
+   }
+
+   .hi3_number.number2 {
+      background-position: -105px -66px;
+   }
+
+   .hi3_number.number3 {
+      background-position: -178px -66px;
+   }
+
+   .hi3_number.number4 {
+      background-position: -252px -66px;
+   }
+
+   .hi3_number.number5 {
+      background-position: -325px -60px;
+   }
+
+   .hi3_step_arrow {
+      top: 50px;
+      width: 20px;
+      height: 20px;
+      background-image: url('/images/customization/arrow_double_right.svg');
+      background-size: 20px 20px;
+   }
+</style>
+
+
+<!-- starting of customization kind -->
+   <div class="customizationtitle">
+      <b>{{- .Params.customizationtitle -}} </b>
+   </div>
+   <div class="customizationtip">
+      ——— {{- .Params.customizationtip -}} ———
+   </div>
+   <div class="customizationkindblock">
+      {{ range $index, $kinditem := .Params.Products }}
+         <div class="customizationkinditem">
+            <div> <img src="{{- $kinditem.pic -}}"> </div>
+            <div> {{- $kinditem.title -}} </div>
+         </div>
+      {{- end -}}
+   </div>
+<!-- endding of customization kind -->
+
+<div class="customizationprocessblock">
+   <div class="customizationtitle">
+      <b>{{- .Params.customizationprocesstitle -}} </b>
+   </div>
+   <div class="customizationtip">
+      ——— {{- .Params.customizationprocesstip -}} ———
+   </div>
+
+   <div class="customizationline">
+      <div class="hi3_number number1"></div>
+      <a href="/{{- $.Language.Lang -}}{{- .Site.Params.contactusurl -}}" target="_blank">
+      <div class="customizationitem">
+         <div class="hi3_step_h">
+         <span class="tshe_posr">
+            <span class="hi3_step_t"> {{ .Params.processStep1Title }}</span>
+            <span class="hi3_step_l"></span>
+         </span>
+      </div>
+         <div class="hi3_step_p">{{ .Params.processStep1Info }}</div>
+      </div>
+      </a>
+      <div class="hi3_step_arrow"></div>
+
+      <div class="hi3_number number2"></div>
+      <div class="customizationitem">
+         <div class="hi3_step_h">
+            <span class="tshe_posr">
+               <span class="hi3_step_t"> {{ .Params.processStep2Title }}</span>
+               <span class="hi3_step_l"></span>
+            </span>
+         </div>
+         <div class="hi3_step_p">{{ .Params.processStep2Info }}</div>
+      </div>
+      <div class="hi3_step_arrow"></div>
+
+      <div class="hi3_number number3"></div>
+      <div class="customizationitem">
+         <div class="hi3_step_h">
+            <span class="tshe_posr">
+               <span class="hi3_step_t"> {{ .Params.processStep3Title }}</span>
+               <span class="hi3_step_l"></span>
+            </span>
+         </div>
+      <div class="hi3_step_p">{{ .Params.processStep3Info }}</div>
+      </div>
+      <div class="hi3_step_arrow"></div>
+
+      <div class="hi3_number number4"></div>
+      <div class="customizationitem">
+         <div class="hi3_step_h">
+            <span class="tshe_posr">
+               <span class="hi3_step_t"> {{ .Params.processStep4Title }}</span>
+               <span class="hi3_step_l"></span>
+            </span>
+         </div>
+      <div class="hi3_step_p">{{ .Params.processStep4Info }}</div>
+      </div>
+   </div>
+
+
+</div>
+
+{{ end }}

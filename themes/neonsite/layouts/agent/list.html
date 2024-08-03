@@ -1,0 +1,59 @@
+{{ define "main" }}
+<script src="/js/contact.js"></script>
+<script type="text/javascript">
+    var verifycodeurl = "{{- .Params.verifycodeurl -}}";
+    var noNameError = "{{- .Params.emptyCustomerName -}}";
+    var noContactWay = "{{- .Params.emptyContactWay -}}";
+    var noOnLineMessageContent = "{{- .Params.emptyOnlineMessage -}}";
+    var noVcode = "{{- .Params.emptyVcode -}}";
+    var jsUnknowError = "{{- .Params.jsUnknowError -}}";
+    var jsServerError = "{{- .Params.jsServerError -}}";
+    var jsTimeOut = "{{- .Params.jsTimeOut -}}";
+    var jsParseError = "{{- .Params.jsParseError -}}";
+    var jsYourName = "{{- .Params.yourname -}}";
+    var jsSuccessful = "{{- .Params.jsSuccessfule -}}";
+    var jsInvalidVcode = "{{- .Params.jsInvalidVcode -}}";
+    var langcode = "{{- $.Language.Lang -}}";
+    var id = generateSessionId();
+    function refreshverifycode(){
+        var verifycodeObj = document.getElementById("verifiycode");
+        verifycodeObj.src = verifycodeurl + '?PHPSESSID=' + id + '&refresh=' + Math.random();
+    }
+
+    $(document).ready(function (){
+        refreshverifycode();
+    });
+</script>
+
+    <div class="contactus">
+        <b>{{- .Params.agenttitle -}} </b>
+    </div>
+
+    <div class="onlinemessagetip">
+        {{- .Params.agenttip -}}
+    </div>
+
+    <form name="neononlinemessage" action="{{- .Params.agentaction -}}" method="post" id="formagent">
+    <div class="onlinemessageform">
+        <div class="onlinemessageformline">
+         <input type="hidden" name="formtype" value="agent">
+        <input type="text" name="name"  class="agentinput" placeholder="{{- .Params.yourname -}}" id="customerName">
+        <input type="text" name="mobile" class="agentinput" placeholder="{{- .Params.mobile -}}" id="mobile" >
+        <input type="text" name="email" class="agentinput" placeholder="{{- .Params.email -}}" id="email" >
+        <input type="text" name="companyname" class="agentinput" placeholder="{{- .Params.organizationname -}}" ><br><br>
+        </div>
+        <div class="onlinemessageformline">
+        <textarea  name="content" class="onlinemessagecontent" placeholder="{{- .Params.questions -}}" id="questions"></textarea>
+        </div>
+        <div class="onlinemessageformline">
+            <input type="text" name="vcode" class="verifycode" placeholder="{{- .Params.verifycodemsg -}}" id="vcode">
+            <a href="javascript:void(0);" onclick="refreshverifycode();"><img src="" class="verifycodeurl" id="verifiycode"> </a>
+        </div>
+
+        <div class="onlinemessageformsubmitline">
+
+            <a href="javascript:void(0)" onclick="submitAgent()"> <div class="onlinemessageformbutton"> {{- .Params.onlinemessagesubmit -}} </div></a>
+        </div>
+    </div>
+    </form>
+{{ end }}

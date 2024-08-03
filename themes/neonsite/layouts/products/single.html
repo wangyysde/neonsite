@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div class="productsinglemain">
+    <div class="productsingleleftnavigation">
+        {{ partial "products/productleft.html" . }}
+    </div>
+    <div class="productsinglerightcontent">
+        <div class="homeaboutus">
+            <b>{{- .Params.currenttitle -}} </b>
+        </div>
+        <div class="homemission">
+            {{- .Site.Params.mission -}}
+        </div>
+        <div >
+            {{ $started := 0 }}
+            {{ range $index, $category := .Params.products }}
+                {{ if eq (mod $index 4) 0 }}
+                    {{ if eq $started 1 }}
+                        </div>
+                    {{ end }}
+                    <div class="productsinglline">
+                    {{ $started = 1}}
+                {{- end -}}
+                <a href="{{- $.Params.contacturi -}}" target="_blank">
+                <div class="productsingleitem" >
+                    <div>
+                        <img src="{{- $category.pic -}} ">
+                    </div>
+                    <div class="productsingletitleblock">
+                        <b> {{ $category.title }} </b>
+                    </div>
+                    <div class="productsinglecontactusline">
+                    <div class="productsinglecontactus">
+                        {{- $.Site.Params.contactus -}}
+                    </div>
+                    </div>
+                </div>
+                </a>
+            {{- end -}}
+
+        </div>
+    </div>
+</div>
+{{ end }}

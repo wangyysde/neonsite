@@ -1,0 +1,86 @@
+{{ define "main" }}
+<script src="/js/contact.js"></script>
+<script type="text/javascript">
+    var verifycodeurl = "{{- .Params.verifycodeurl -}}";
+    var noNameError = "{{- .Params.emptyCustomerName -}}";
+    var noContactWay = "{{- .Params.emptyContactWay -}}";
+    var noOnLineMessageContent = "{{- .Params.emptyOnlineMessage -}}";
+    var noVcode = "{{- .Params.emptyVcode -}}";
+    var jsUnknowError = "{{- .Params.jsUnknowError -}}";
+    var jsServerError = "{{- .Params.jsServerError -}}";
+    var jsTimeOut = "{{- .Params.jsTimeOut -}}";
+    var jsParseError = "{{- .Params.jsParseError -}}";
+    var jsYourName = "{{- .Params.yourname -}}";
+    var jsSuccessful = "{{- .Params.jsSuccessfule -}}";
+    var jsInvalidVcode = "{{- .Params.jsInvalidVcode -}}";
+    var langcode = "{{- $.Language.Lang -}}";
+    var id = generateSessionId();
+    function refreshverifycode(){
+        var verifycodeObj = document.getElementById("verifiycode");
+        verifycodeObj.src = verifycodeurl + '?PHPSESSID=' + id + '&refresh=' + Math.random();
+    }
+
+    $(document).ready(function (){
+        refreshverifycode();
+    });
+</script>
+  <div class="contactus">
+    <b>{{- .Site.Params.contactus -}} </b>
+  </div>
+
+  <div class="contactmethodblock">
+    {{ range $index, $contact := .Site.Params.contacts }}
+      {{ if $contact.url }}
+        <a href="{{- $contact.url -}}">
+      {{ end }}
+      <div class="contactmethoditem">
+         <div class="contactmethodlogo">
+           <i class="{{ $contact.fontname -}}"></i>
+         </div>
+         <div class="contactmethodtitle">
+            <b>{{ $contact.title -}}</b>
+         </div>
+         <div class="contactmethodcontent">
+             {{ $contact.content -}}
+         </div>
+
+      </div>
+     {{ if $contact.url }}
+        </a>
+     {{ end }}
+
+   {{ end }}
+
+  </div>
+
+    <div class="contactus">
+        <b>{{- .Site.Params.onlinemessagetitle -}} </b>
+    </div>
+
+    <div class="onlinemessagetip">
+        {{- .Site.Params.onlinemessagetip -}}
+    </div>
+
+    <form name="neononlinemessage" action="{{- .Params.onlinemessageaction -}}" method="post" id="formneononlinemessage">
+    <div class="onlinemessageform">
+        <div class="onlinemessageformline">
+         <input type="hidden" name="formtype" value="onlinemessage">
+        <input type="text" name="name"  class="onlinemessageinputname" placeholder="{{- .Params.yourname -}}" id="customerName">
+        <input type="text" name="contactway" class="onlinemessageinputcontactway" placeholder="{{- .Params.contactway -}}" id="contactway" >
+        <input type="text" name="companyname" class="onlinemessageinputcompanyname" placeholder="{{- .Params.organizationname -}}" ><br><br>
+        </div>
+        <div class="onlinemessageformline">
+        <textarea  name="content" class="onlinemessagecontent" placeholder="{{- .Params.onlinemessagecontent -}}" id="onlinemessagecontent"></textarea>
+        </div>
+        <div class="onlinemessageformline">
+            <input type="text" name="vcode" class="verifycode" placeholder="{{- .Params.verifycodemsg -}}" id="vcode">
+            <a href="javascript:void(0);" onclick="refreshverifycode();"><img src="" class="verifycodeurl" id="verifiycode"> </a>
+        </div>
+
+        <div class="onlinemessageformsubmitline">
+
+            <a href="javascript:void(0)" onclick="submitOnlineMessage()"> <div class="onlinemessageformbutton"> {{- .Params.onlinemessagesubmit -}} </div></a>
+        </div>
+    </div>
+    </form>
+{{ end }}

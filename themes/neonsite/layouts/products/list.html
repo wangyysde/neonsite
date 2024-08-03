@@ -1,0 +1,45 @@
+{{ define "main" }}
+<div class="homeaboutus">
+    <b>{{- .Site.Params.productscatalories -}} </b>
+</div>
+
+<div class="homemission">
+    {{- .Site.Params.mission -}}
+</div>
+
+{{ $started := 0 }}
+<div class="homecategoryblock">
+    {{ range $index, $category := .Site.Params.products }}
+    {{ if eq (mod $index 5) 0 }}
+    {{ if eq $started 1 }}
+</div>
+{{ end }}
+<div class="homecategoryline">
+    {{ $started = 1}}
+    {{ end }}
+    <a href="{{- $category.url -}}" target="_blank">
+        <div class="homecategoryitem" >
+            <div>
+                <img src="{{- $category.pic -}} ">
+            </div>
+            <div class="homecategorytitleblock">
+                <div class="homecategorytitleblockleft">
+                    <div class="homecategorytitleblocktitle">
+                        <b> {{ $category.title }} </b>
+                    </div>
+                    <div class="homecategorytitleblocktip">
+                        {{- $.Site.Params.productstip -}}
+                    </div>
+                </div>
+                <div class="homecategorytitleblockright">
+                    <i class="fas fa-forward"></i>
+                </div>
+            </div>
+        </div>
+    </a>
+    {{ end }}
+    {{ if eq $started 1 }}
+</div>
+{{ end }}
+</div>
+{{ end }}

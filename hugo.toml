@@ -1,0 +1,239 @@
+baseURL = 'https://example.org/'
+languageCode = 'zh-CN'
+title = 'My New Hugo Site'
+theme = 'neonsite'
+defaultContentLanguage = 'zh'
+defaultContentLanguageInSubdir = true
+tableOfContents =true
+
+[languages]
+  [languages.zh]
+    contentDir = 'content/zh'
+    disabled = false
+    languageCode = 'zh-CN'
+    languageDirection = 'ltr'
+    languageName = '中文'
+    title = '上海聚余服饰有限公司'
+    weight = 2
+    [languages.zh.menus]
+      [[languages.zh.menus.main]]
+        name = '网站首页'
+        pageRef = '/'
+        weight = 10
+      [[languages.zh.menus.main]]
+        name = '公司简介'
+        pageRef = '/company'
+        weight = 20
+      [[languages.zh.menus.main]]
+         name = '产品中心'
+         pageRef = '/products'
+         weight = 30
+      [[languages.zh.menus.main]]
+         name = '高端定制'
+         pageRef = '/products/customization'
+         weight = 40
+      [[languages.zh.menus.main]]
+        name = '诚招代理'
+        pageRef = '/agent'
+        weight = 50
+      [[languages.zh.menus.main]]
+        name = '联系我们'
+        pageRef = '/contact'
+        weight = 60
+    [languages.zh.params]
+      productscatalories = '产品类别'
+      mission = '专注于热升华转印运动服装的领先公司'
+      productstip = '欢迎来电咨询我们的产品'
+      contactus = '联系我们'
+      contactusurl = '/contact'
+      onlinemessagetitle = '在线留言'
+      onlinemessagetip = '如果您有任何疑问、意见或建议,或需进一步了解产品详细信息,请填写以下表单,以获得及时的帮助与支持'
+      companyname = '上海聚余服饰有限公司'
+      copyrightmsg = '版权所有'
+      [languages.zh.params.products]
+        [languages.zh.params.products.0]
+          title = '垒球服'
+          pic = '/images/baseball.png'
+          url = 'baseball'
+          prefontname = 'fa-pencil'
+        [languages.zh.params.products.1]
+          title = '骑行服'
+          pic = '/images/cycling.png'
+          url = 'cycling'
+          prefontname = 'fa-plane'
+        [languages.zh.params.products.2]
+          title = '足球服'
+          pic = '/images/football.png'
+          url = 'football'
+          prefontname = 'fa-chain'
+        [languages.zh.params.products.3]
+          title = '冰球服'
+          pic = '/images/ice_hockey.png'
+          url = 'ice_hockey'
+          prefontname = 'fa-arrows'
+        [languages.zh.params.products.4]
+          title = '曲棍球服'
+          pic = '/images/lacrosse.png'
+          url = 'lacrosse'
+          prefontname = 'fa-dashboard'
+        [languages.zh.params.products.5]
+          title = '泰拳服'
+          pic = '/images/mma.png'
+          url = 'mma'
+          prefontname = 'fa-fighter-jet'
+        [languages.zh.params.products.6]
+          title = '抱枕'
+          pic = '/images/pillow.png'
+          url = 'pillow'
+          prefontname = 'fa-life-ring'
+        [languages.zh.params.products.7]
+          title = '紧身衣'
+          pic = '/images/rash_guard.png'
+          url = 'rash_guard'
+          prefontname = 'fa-trophy'
+        [languages.zh.params.products.8]
+          title = '橄榄球服'
+          pic = '/images/rugby.png'
+          url = 'rugby'
+          prefontname = 'fa-star-half'
+        [languages.zh.params.products.9]
+          title = '摔跤服'
+          pic = '/images/wrestling.png'
+          url = 'wrestling'
+          prefontname = 'fa-ticket'
+      [languages.zh.params.contacts]
+        [languages.zh.params.contacts.0]
+          fontname = 'fas fa-phone'
+          content = '13916716349'
+          title = '咨询电话'
+          url = ''
+        [languages.zh.params.contacts.1]
+          fontname = 'fas fa-envelope'
+          content = 'neonsports@163.com'
+          title = '企业邮箱'
+          url = 'mailto: neonsports@163.com'
+        [languages.zh.params.contacts.2]
+          fontname = 'fab fa-weixin'
+          content = '13916716349'
+          title = '微信客服'
+          url = 'https://work.weixin.qq.com/kfid/kfc0b297109868c3ec3'
+        [languages.zh.params.contacts.3]
+          fontname = 'fab fa-qq'
+          content = '150694131'
+          title = 'QQ客服'
+          url = ''
+  [languages.en]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'Shanghai Neon SportsWear'
+    weight = 1
+    [languages.en.menus]
+      [[languages.en.menus.main]]
+        name = 'Home'
+        pageRef = '/'
+        weight = 10
+      [[languages.en.menus.main]]
+        name = 'Company'
+        pageRef = '/company'
+        weight = 20
+      [[languages.en.menus.main]]
+        name = 'Products'
+        pageRef = '/products'
+        weight = 30
+      [[languages.en.menus.main]]
+        name = 'Customization'
+        pageRef = '/products/customization'
+        weight = 40
+      [[languages.en.menus.main]]
+        name = 'Recruit Agents'
+        pageRef = '/agent'
+        weight = 40
+      [[languages.en.menus.main]]
+        name = 'Contact'
+        pageRef = '/contact'
+        weight = 50
+    [languages.en.params]
+      productscatalories = 'Product Categories'
+      mission = 'A leading company dedicated to advancing sublimation printing sportswear'
+      productstip = 'Welcome to inquire about our products'
+      contactus = 'Contact Us'
+      contactusurl = '/contact'
+      onlinemessagetitle = 'Online Message'
+      onlinemessagetip = 'If you have any questions, comments or suggestions, or need further information about the product, please fill out the following form'
+      companyname = 'Shanghai Neon SportsWear Co;Ltd'
+      copyrightmsg = 'All rights reserved'
+      [languages.en.params.products]
+        [languages.en.params.products.0]
+          title = 'Baseball'
+          pic = '/images/baseball.png'
+          url = 'baseball'
+          prefontname = 'fa-pencil'
+        [languages.en.params.products.1]
+          title = 'Cycling'
+          pic = '/images/cycling.png'
+          url = 'cycling'
+          prefontname = 'fa-plane'
+        [languages.en.params.products.2]
+          title = 'Football'
+          pic = '/images/football.png'
+          url = 'football'
+          prefontname = 'fa-chain'
+        [languages.en.params.products.3]
+          title = 'Ice Hockey'
+          pic = '/images/ice_hockey.png'
+          url = 'ice_hockey'
+          prefontname = 'fa-arrows'
+        [languages.en.params.products.4]
+          title = 'Lacrosse'
+          pic = '/images/lacrosse.png'
+          url = 'lacrosse'
+          prefontname = 'fa-dashboard'
+        [languages.en.params.products.5]
+          title = 'MMA'
+          pic = '/images/mma.png'
+          url = 'mma'
+          prefontname = 'fa-fighter-jet'
+        [languages.en.params.products.6]
+          title = 'Pillow'
+          pic = '/images/pillow.png'
+          url = 'pillow'
+          prefontname = 'fa-life-ring'
+        [languages.en.params.products.7]
+          title = 'Rash Guard'
+          pic = '/images/rash_guard.png'
+          url = 'rash_guard'
+          prefontname = 'fa-trophy'
+        [languages.en.params.products.8]
+          title = 'Rugby'
+          pic = '/images/rugby.png'
+          url = 'rugby'
+          prefontname = 'fa-star-half'
+        [languages.en.params.products.9]
+          title = 'Wrestling'
+          pic = '/images/wrestling.png'
+          url = 'wrestling'
+          prefontname = 'fa-ticket'
+      [languages.en.params.contacts]
+        [languages.en.params.contacts.0]
+          fontname = 'fas fa-phone'
+          content = '(+86) 13916716349'
+          title = 'Mobile Phone'
+          url = ''
+        [languages.en.params.contacts.1]
+          fontname = 'fas fa-envelope'
+          content = 'neonsports@163.com'
+          title = 'Email'
+          url = 'mailto: neonsports@163.com'
+        [languages.en.params.contacts.2]
+          fontname = 'fab fa-weixin'
+          content = '13916716349'
+          title = 'Wechat'
+          url = 'https://work.weixin.qq.com/kfid/kfc0b297109868c3ec3'
+        [languages.en.params.contacts.3]
+          fontname = 'fab fa-qq'
+          content = '150694131'
+          title = 'QQ'
+          url = ''

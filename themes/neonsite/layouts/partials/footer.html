@@ -1,0 +1,41 @@
+{{ $started := 0 }}
+<div class="footer_menu_div">
+    {{- range site.Menus.main }}
+    {{ if eq $started 0 }}
+       {{ $started = 1}}
+    {{ else }}
+      &nbsp;-
+    {{ end }}
+     <li>
+        {{if .URL }}
+        <a href="{{- .URL -}}">
+            {{ else }}
+            <a href="{{ .PageRef }}">
+                {{ end }}
+                {{ .Name }}
+                {{- with .Page }}
+                {{- with .Params.version -}}
+                ({{ . }}
+                {{- end }}
+                {{- end }}
+            </a>
+    </li>
+    {{ end }}
+</div>
+
+<div class="footer_menu_div">
+    {{ range $index, $contact := .Site.Params.contacts }}
+       <i class="{{ $contact.fontname -}}"></i> &nbsp;&nbsp;
+       {{ if $contact.url }}
+          <a href="{{- $contact.url -}}">
+      {{ end }}
+       {{ $contact.content -}}
+       {{ if $contact.url }}
+          </a>
+       {{ end }}
+    &nbsp;&nbsp;&nbsp;&nbsp;
+   {{ end }}
+</div>
+
+
+<div class="footer_copyright_div"> Copyright© 2014 - {{ now.Year }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ .Site.Params.companyname }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;    {{ .Site.Params.copyrightmsg }}</div>

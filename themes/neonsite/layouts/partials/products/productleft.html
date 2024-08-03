@@ -1,0 +1,17 @@
+<div class="productsingleleftnavigationheader">
+    <b>{{- .Site.Params.Productscatalories -}}</b>
+</div>
+
+<div class="productsingleleftnavigationcontent">
+    {{ range $index, $category := .Site.Params.products }}
+    <div class="productsingleleftnavigationitem">
+
+        <li> <i class="fas {{ $category.prefontname -}}"></i> <a href="/{{- $.Language.Lang -}}/products/{{- $category.url -}}"> {{- $category.title -}}</a>
+            {{ if eq $category.url $.Params.currenturl }}
+            <span><i class="fas fa-forward"></i></span>
+            {{- end }}
+        </li>
+
+    </div>
+    {{ end }}
+</div>
