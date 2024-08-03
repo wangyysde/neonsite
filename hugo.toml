@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://neonsite.sysadm.cn/'
 languageCode = 'zh-CN'
-title = 'My New Hugo Site'
+title = '上海聚余服饰有限公司'
 theme = 'neonsite'
 defaultContentLanguage = 'zh'
 defaultContentLanguageInSubdir = true
