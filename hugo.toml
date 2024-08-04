@@ -1,4 +1,4 @@
-baseURL = 'https://neonsite.sysadm.cn/'
+baseURL = 'http://localhost:1313'
 languageCode = 'zh-CN'
 title = '上海聚余服饰有限公司'
 theme = 'neonsite'
