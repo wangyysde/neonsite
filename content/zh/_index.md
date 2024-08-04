@@ -1,7 +1,7 @@
 +++
 title = ''
 date = 2024-07-20T10:35:31+08:00
-draft = true
+draft = false
 [params]
   aboutustitle = '关于聚余'
   companyname = '上海聚余服饰有限公司'
