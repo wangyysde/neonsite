@@ -15,14 +15,12 @@ jobs:
           submodules: recursive
           fetch-depth: 0
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "0.128.2"
           extended: true
       - name: Build
-        run: hugo -D --minify
-        env:
-          HUGO_ENV: production
+        run: hugo -D 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         if: ${{ github.ref == 'refs/heads/main' }}
