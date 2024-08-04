@@ -20,7 +20,7 @@ jobs:
           hugo-version: "0.128.2"
           extended: true
       - name: Build
-        run: hugo -D 
+        run: hugo -D
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         if: ${{ github.ref == 'refs/heads/main' }}

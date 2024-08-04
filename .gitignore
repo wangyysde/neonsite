@@ -73,4 +73,5 @@ testYamls
 # generated samples by make manifests
 config/samples
 
-public
+/public
+/myDocs
