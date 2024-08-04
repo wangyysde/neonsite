@@ -1,3 +1,110 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>上海聚余服饰有限公司</title><link>http://localhost:1313/zh/</link><description>Recent content on 上海聚余服饰有限公司</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 28 Jul 2024 10:28:26 +0800</lastBuildDate><atom:link href="http://localhost:1313/zh/index.xml" rel="self" type="application/rss+xml"/><item><title>Customization</title><link>http://localhost:1313/zh/products/customization/</link><pubDate>Sun, 28 Jul 2024 10:28:26 +0800</pubDate><guid>http://localhost:1313/zh/products/customization/</guid><description/></item><item><title>Wrestling</title><link>http://localhost:1313/zh/products/wrestling/</link><pubDate>Sat, 27 Jul 2024 14:38:00 +0800</pubDate><guid>http://localhost:1313/zh/products/wrestling/</guid><description/></item><item><title>Rugby</title><link>http://localhost:1313/zh/products/rugby/</link><pubDate>Sat, 27 Jul 2024 14:37:40 +0800</pubDate><guid>http://localhost:1313/zh/products/rugby/</guid><description/></item><item><title>Rash_guard</title><link>http://localhost:1313/zh/products/rash_guard/</link><pubDate>Sat, 27 Jul 2024 14:37:23 +0800</pubDate><guid>http://localhost:1313/zh/products/rash_guard/</guid><description/></item><item><title>Pillow</title><link>http://localhost:1313/zh/products/pillow/</link><pubDate>Sat, 27 Jul 2024 14:37:07 +0800</pubDate><guid>http://localhost:1313/zh/products/pillow/</guid><description/></item><item><title>Mma</title><link>http://localhost:1313/zh/products/mma/</link><pubDate>Sat, 27 Jul 2024 14:36:49 +0800</pubDate><guid>http://localhost:1313/zh/products/mma/</guid><description/></item><item><title>Lacrosse</title><link>http://localhost:1313/zh/products/lacrosse/</link><pubDate>Sat, 27 Jul 2024 14:36:25 +0800</pubDate><guid>http://localhost:1313/zh/products/lacrosse/</guid><description/></item><item><title>Ice_hockey</title><link>http://localhost:1313/zh/products/ice_hockey/</link><pubDate>Sat, 27 Jul 2024 14:36:07 +0800</pubDate><guid>http://localhost:1313/zh/products/ice_hockey/</guid><description/></item><item><title>Football</title><link>http://localhost:1313/zh/products/football/</link><pubDate>Sat, 27 Jul 2024 14:35:49 +0800</pubDate><guid>http://localhost:1313/zh/products/football/</guid><description/></item><item><title>Cycling</title><link>http://localhost:1313/zh/products/cycling/</link><pubDate>Sat, 27 Jul 2024 14:22:09 +0800</pubDate><guid>http://localhost:1313/zh/products/cycling/</guid><description/></item><item><title>Baseball</title><link>http://localhost:1313/zh/products/baseball/</link><pubDate>Fri, 26 Jul 2024 14:35:18 +0800</pubDate><guid>http://localhost:1313/zh/products/baseball/</guid><description/></item><item><title>Post 3</title><link>http://localhost:1313/zh/posts/post-3/</link><pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate><guid>http://localhost:1313/zh/posts/post-3/</guid><description>Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum.</description></item><item><title>Post 2</title><link>http://localhost:1313/zh/posts/post-2/</link><pubDate>Wed, 15 Feb 2023 10:00:00 -0700</pubDate><guid>http://localhost:1313/zh/posts/post-2/</guid><description>Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.
-Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia.</description></item><item><title>Post 1</title><link>http://localhost:1313/zh/posts/post-1/</link><pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate><guid>http://localhost:1313/zh/posts/post-1/</guid><description>Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.
-Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>上海聚余服饰有限公司</title>
+    <link>http://localhost:1313/zh/</link>
+    <description>Recent content on 上海聚余服饰有限公司</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 28 Jul 2024 10:28:26 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Customization</title>
+      <link>http://localhost:1313/zh/products/customization/</link>
+      <pubDate>Sun, 28 Jul 2024 10:28:26 +0800</pubDate>
+      <guid>http://localhost:1313/zh/products/customization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wrestling</title>
+      <link>http://localhost:1313/zh/products/wrestling/</link>
+      <pubDate>Sat, 27 Jul 2024 14:38:00 +0800</pubDate>
+      <guid>http://localhost:1313/zh/products/wrestling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rugby</title>
+      <link>http://localhost:1313/zh/products/rugby/</link>
+      <pubDate>Sat, 27 Jul 2024 14:37:40 +0800</pubDate>
+      <guid>http://localhost:1313/zh/products/rugby/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rash_guard</title>
+      <link>http://localhost:1313/zh/products/rash_guard/</link>
+      <pubDate>Sat, 27 Jul 2024 14:37:23 +0800</pubDate>
+      <guid>http://localhost:1313/zh/products/rash_guard/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pillow</title>
+      <link>http://localhost:1313/zh/products/pillow/</link>
+      <pubDate>Sat, 27 Jul 2024 14:37:07 +0800</pubDate>
+      <guid>http://localhost:1313/zh/products/pillow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mma</title>
+      <link>http://localhost:1313/zh/products/mma/</link>
+      <pubDate>Sat, 27 Jul 2024 14:36:49 +0800</pubDate>
+      <guid>http://localhost:1313/zh/products/mma/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lacrosse</title>
+      <link>http://localhost:1313/zh/products/lacrosse/</link>
+      <pubDate>Sat, 27 Jul 2024 14:36:25 +0800</pubDate>
+      <guid>http://localhost:1313/zh/products/lacrosse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ice_hockey</title>
+      <link>http://localhost:1313/zh/products/ice_hockey/</link>
+      <pubDate>Sat, 27 Jul 2024 14:36:07 +0800</pubDate>
+      <guid>http://localhost:1313/zh/products/ice_hockey/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Football</title>
+      <link>http://localhost:1313/zh/products/football/</link>
+      <pubDate>Sat, 27 Jul 2024 14:35:49 +0800</pubDate>
+      <guid>http://localhost:1313/zh/products/football/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cycling</title>
+      <link>http://localhost:1313/zh/products/cycling/</link>
+      <pubDate>Sat, 27 Jul 2024 14:22:09 +0800</pubDate>
+      <guid>http://localhost:1313/zh/products/cycling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Baseball</title>
+      <link>http://localhost:1313/zh/products/baseball/</link>
+      <pubDate>Fri, 26 Jul 2024 14:35:18 +0800</pubDate>
+      <guid>http://localhost:1313/zh/products/baseball/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Post 3</title>
+      <link>http://localhost:1313/zh/posts/post-3/</link>
+      <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/zh/posts/post-3/</guid>
+      <description>Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum.</description>
+    </item>
+    <item>
+      <title>Post 2</title>
+      <link>http://localhost:1313/zh/posts/post-2/</link>
+      <pubDate>Wed, 15 Feb 2023 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/zh/posts/post-2/</guid>
+      <description>Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.&#xA;Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia.</description>
+    </item>
+    <item>
+      <title>Post 1</title>
+      <link>http://localhost:1313/zh/posts/post-1/</link>
+      <pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/zh/posts/post-1/</guid>
+      <description>Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.&#xA;Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea.</description>
+    </item>
+  </channel>
+</rss>
