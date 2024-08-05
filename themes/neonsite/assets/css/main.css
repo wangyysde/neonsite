@@ -195,12 +195,25 @@ a {
   float: right;
   width: 40px;
   height: 40px;
-  background-color: #eee;
+  background-color: #ffffff;
   margin-right: 15px;
   align-items: center;
   display: flex;
   justify-content: center;
-  color: #ff0000;
+  color: #005eb6;
+  font-size: 22px;
+}
+
+.homecategorytitleblockright:hover {
+  float: right;
+  width: 40px;
+  height: 40px;
+  background-color: #005eb6;
+  margin-right: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
   font-size: 22px;
 }
 
@@ -427,6 +440,25 @@ a {
   display: flex;
   justify-content: center;
   color: #005eb6;
+  font-size: 15px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom:1px solid #005eb6;
+  border-top:1px solid #005eb6;
+  border-left:1px solid #005eb6;
+  border-right:1px solid #005eb6;
+}
+
+.productsinglecontactus:hover {
+  height: 30px;
+  width: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: #005eb6;
+  color: #ffffff;
   font-size: 15px;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;

@@ -52,9 +52,9 @@ tableOfContents =true
       copyrightmsg = '版权所有'
       [languages.zh.params.products]
         [languages.zh.params.products.0]
-          title = '垒球服'
-          pic = '/images/baseball.png'
-          url = 'baseball'
+          title = '蓝球服'
+          pic = '/images/products/basketball-1.png'
+          url = 'basketball'
           prefontname = 'fa-pencil'
         [languages.zh.params.products.1]
           title = '骑行服'
@@ -167,9 +167,9 @@ tableOfContents =true
       copyrightmsg = 'All rights reserved'
       [languages.en.params.products]
         [languages.en.params.products.0]
-          title = 'Baseball'
-          pic = '/images/baseball.png'
-          url = 'baseball'
+          title = 'Basketball'
+          pic = '/images/products/basketball-1.png'
+          url = 'Basketball'
           prefontname = 'fa-pencil'
         [languages.en.params.products.1]
           title = 'Cycling'

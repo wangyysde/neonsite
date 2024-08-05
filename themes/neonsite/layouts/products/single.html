@@ -23,14 +23,14 @@
                 <a href="{{- $.Params.contacturi -}}" target="_blank">
                 <div class="productsingleitem" >
                     <div>
-                        <img src="{{- $category.pic -}} ">
+                        <img src="{{- $category.pic -}} " width="210px" height="250px">
                     </div>
                     <div class="productsingletitleblock">
                         <b> {{ $category.title }} </b>
                     </div>
                     <div class="productsinglecontactusline">
                     <div class="productsinglecontactus">
-                        {{- $.Site.Params.contactus -}}
+                      <a href="/{{- $.Language.Lang -}}/contact/">   {{- $.Site.Params.contactus -}} </a>
                     </div>
                     </div>
                 </div>
