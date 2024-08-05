@@ -169,7 +169,7 @@ tableOfContents =true
         [languages.en.params.products.0]
           title = 'Basketball'
           pic = '/images/products/basketball-1.png'
-          url = 'Basketball'
+          url = 'basketball'
           prefontname = 'fa-pencil'
         [languages.en.params.products.1]
           title = 'Cycling'
