@@ -229,6 +229,10 @@ a {
   margin-bottom: 50px;
   text-align: center;
   align-content: center;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
 

@@ -68,37 +68,37 @@ tableOfContents =true
           prefontname = 'fa-chain'
         [languages.zh.params.products.3]
           title = '冰球服'
-          pic = '/images/ice_hockey.png'
+          pic = '/images/products/ice_hockey_1.png'
           url = 'ice_hockey'
           prefontname = 'fa-arrows'
         [languages.zh.params.products.4]
           title = '曲棍球服'
-          pic = '/images/lacrosse.png'
+          pic = '/images/products/lacrosse_1.png'
           url = 'lacrosse'
           prefontname = 'fa-dashboard'
         [languages.zh.params.products.5]
-          title = '泰拳服'
-          pic = '/images/mma.png'
-          url = 'mma'
+          title = '棒球服'
+          pic = '/images/products/baseball_1.png'
+          url = 'baseball'
           prefontname = 'fa-fighter-jet'
         [languages.zh.params.products.6]
           title = '抱枕'
-          pic = '/images/pillow.png'
+          pic = '/images/products/pillow_1.png'
           url = 'pillow'
           prefontname = 'fa-life-ring'
         [languages.zh.params.products.7]
           title = '紧身衣'
-          pic = '/images/rash_guard.png'
+          pic = '/images/products/rash_guard_1.png'
           url = 'rash_guard'
           prefontname = 'fa-trophy'
         [languages.zh.params.products.8]
           title = '橄榄球服'
-          pic = '/images/rugby.png'
+          pic = '/images/products/rugby_1.png'
           url = 'rugby'
           prefontname = 'fa-star-half'
         [languages.zh.params.products.9]
           title = '摔跤服'
-          pic = '/images/wrestling.png'
+          pic = '/images/products/wrestling_1.png'
           url = 'wrestling'
           prefontname = 'fa-ticket'
       [languages.zh.params.contacts]
@@ -183,37 +183,37 @@ tableOfContents =true
           prefontname = 'fa-chain'
         [languages.en.params.products.3]
           title = 'Ice Hockey'
-          pic = '/images/ice_hockey.png'
+          pic = '/images/products/ice_hockey_1.png'
           url = 'ice_hockey'
           prefontname = 'fa-arrows'
         [languages.en.params.products.4]
           title = 'Lacrosse'
-          pic = '/images/lacrosse.png'
+          pic = '/images/products/lacrosse_1.png'
           url = 'lacrosse'
           prefontname = 'fa-dashboard'
         [languages.en.params.products.5]
-          title = 'MMA'
-          pic = '/images/mma.png'
-          url = 'mma'
+          title = 'Baseball'
+          pic = '/images/products/baseball_1.png'
+          url = 'baseball'
           prefontname = 'fa-fighter-jet'
         [languages.en.params.products.6]
           title = 'Pillow'
-          pic = '/images/pillow.png'
+          pic = '/images/products/pillow_1.png'
           url = 'pillow'
           prefontname = 'fa-life-ring'
         [languages.en.params.products.7]
           title = 'Rash Guard'
-          pic = '/images/rash_guard.png'
+          pic = '/images/products/rash_guard_1.png'
           url = 'rash_guard'
           prefontname = 'fa-trophy'
         [languages.en.params.products.8]
           title = 'Rugby'
-          pic = '/images/rugby.png'
+          pic = '/images/products/rugby_1.png'
           url = 'rugby'
           prefontname = 'fa-star-half'
         [languages.en.params.products.9]
           title = 'Wrestling'
-          pic = '/images/wrestling.png'
+          pic = '/images/products/wrestling_1.png'
           url = 'wrestling'
           prefontname = 'fa-ticket'
       [languages.en.params.contacts]
