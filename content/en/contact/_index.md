@@ -3,7 +3,7 @@ title = 'Contact'
 date = 2024-07-29T09:10:41+08:00
 draft = true
 [params]
-  onlinemessageaction = 'https://www.sysadm.cn/sendonlinemessage.php'
+  onlinemessageaction = 'https://www.sysadm.cn/sendemail.php'
   yourname = 'Your Name'
   contactway = 'Contact Way'
   organizationname = 'Organization Name'
