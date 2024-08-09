@@ -116,7 +116,7 @@ tableOfContents =true
           fontname = 'fab fa-weixin'
           content = '13916716349'
           title = '微信客服'
-          url = 'https://work.weixin.qq.com/kfid/kfc0b297109868c3ec3'
+          url = 'https://work.weixin.qq.com/kfid/kfc81205348586f98b3'
         [languages.zh.params.contacts.3]
           fontname = 'fab fa-qq'
           content = '150694131'
@@ -231,7 +231,7 @@ tableOfContents =true
           fontname = 'fab fa-weixin'
           content = '13916716349'
           title = 'Wechat'
-          url = 'https://work.weixin.qq.com/kfid/kfc0b297109868c3ec3'
+          url = 'https://work.weixin.qq.com/kfid/kfc81205348586f98b3'
         [languages.en.params.contacts.3]
           fontname = 'fab fa-qq'
           content = '150694131'
