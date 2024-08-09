@@ -87,9 +87,9 @@ tableOfContents =true
           url = 'pillow'
           prefontname = 'fa-life-ring'
         [languages.zh.params.products.7]
-          title = '紧身衣'
-          pic = '/images/products/rash_guard_1.png'
-          url = 'rash_guard'
+          title = 'Polo衫'
+          pic = '/images/products/polo_shirt_1.png'
+          url = 'polo_shirt'
           prefontname = 'fa-trophy'
         [languages.zh.params.products.8]
           title = '橄榄球服'
@@ -202,9 +202,9 @@ tableOfContents =true
           url = 'pillow'
           prefontname = 'fa-life-ring'
         [languages.en.params.products.7]
-          title = 'Rash Guard'
-          pic = '/images/products/rash_guard_1.png'
-          url = 'rash_guard'
+          title = 'Polo Shirt'
+          pic = '/images/products/polo_shirt_1.png'
+          url = 'polo_shirt'
           prefontname = 'fa-trophy'
         [languages.en.params.products.8]
           title = 'Rugby'

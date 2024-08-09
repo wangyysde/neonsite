@@ -15,4 +15,7 @@ draft = true
     [params.products.2]
       title = '摔跤服'
       pic = '/images/products/wrestling_3.png'
+    [params.products.3]
+      title = '摔跤服'
+      pic = '/images/products/wrestling_4.png'
 +++
