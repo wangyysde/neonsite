@@ -2,7 +2,7 @@ baseURL = 'https://www.neonsports.cn/'
 languageCode = 'zh-CN'
 title = '上海聚余服饰有限公司'
 theme = 'neonsite'
-defaultContentLanguage = 'zh'
+defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = true
 tableOfContents =true
 
