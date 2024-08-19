@@ -233,7 +233,7 @@ tableOfContents =true
           title = 'Wechat'
           url = 'https://work.weixin.qq.com/kfid/kfc81205348586f98b3'
         [languages.en.params.contacts.3]
-          fontname = 'fab fa-qq'
-          content = '150694131'
-          title = 'QQ'
-          url = ''
+          fontname = 'fab fa-skype'
+          content = 'neonsports@163.com'
+          title = 'Skype'
+          url = 'skype:%20neonsports@163.com?chat'

@@ -27,7 +27,7 @@
     {{ range $index, $contact := .Site.Params.contacts }}
        <i class="{{ $contact.fontname -}}"></i> &nbsp;&nbsp;
        {{ if $contact.url }}
-          <a href="{{- $contact.url -}}">
+          <a href="{{ $contact.url | safeURL }}">
       {{ end }}
        {{ $contact.content -}}
        {{ if $contact.url }}
@@ -39,3 +39,31 @@
 
 
 <div class="footer_copyright_div"> Copyright© 2014 - {{ now.Year }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ .Site.Params.companyname }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;    {{ .Site.Params.copyrightmsg }}</div>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/66c2c928146b7af4a43bdeb9/1i5ke3ian';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+
+<div class="fixright">
+    <a href="skype:neonsports@163.com?chat">
+    <i class="fab fa-skype"></i>
+    </a>
+
+    <a href="https://work.weixin.qq.com/kfid/kfc81205348586f98b3">
+        <i class="fab fa-weixin"></i>
+    </a>
+
+    <a href="mailto: neonsports@163.com">
+        <i class="fas fa-envelope"></i>
+    </a>
+</div>
+<!--End of Tawk.to Script-->
