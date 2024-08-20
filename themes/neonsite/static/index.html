@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>https://www.neonsports/en/</title>
+    <link rel="canonical" href="https://www.neonsports/en/">
+    <meta name="robots" content="noindex">
+    <meta charset="utf-8">
+    <script>
+        // 检测浏览器语言并转换
+        function redirectToBrowserLang() {
+            const langs = ['en', 'zh']; // 定义你支持的语言
+            const browserLang = navigator.language || navigator.userLanguage; // 获取浏览器语言
+            const lang = langs.find(l => browserLang.startsWith(l)); // 在支持的语言中查找匹配的语言
+            if (lang) {
+                window.location.href = `/${lang}/`; // 跳转到对应语言的页面
+            }
+        }
+
+        redirectToBrowserLang(); // 页面加载时调用函数
+    </script>
+</head>
+</html>
