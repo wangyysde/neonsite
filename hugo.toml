@@ -104,7 +104,7 @@ tableOfContents =true
       [languages.zh.params.contacts]
         [languages.zh.params.contacts.0]
           fontname = 'fas fa-phone'
-          content = '13916716349'
+          content = '15391822710'
           title = '咨询电话'
           url = ''
         [languages.zh.params.contacts.1]
@@ -114,7 +114,7 @@ tableOfContents =true
           url = 'mailto: neonsports@163.com'
         [languages.zh.params.contacts.2]
           fontname = 'fab fa-weixin'
-          content = '13916716349'
+          content = '1539182270'
           title = '微信客服'
           url = 'https://work.weixin.qq.com/kfid/kfc81205348586f98b3'
         [languages.zh.params.contacts.3]
@@ -219,7 +219,7 @@ tableOfContents =true
       [languages.en.params.contacts]
         [languages.en.params.contacts.0]
           fontname = 'fas fa-phone'
-          content = '(+86) 13916716349'
+          content = '(+86) 15391822710'
           title = 'Mobile Phone'
           url = ''
         [languages.en.params.contacts.1]
@@ -229,7 +229,7 @@ tableOfContents =true
           url = 'mailto: neonsports@163.com'
         [languages.en.params.contacts.2]
           fontname = 'fab fa-weixin'
-          content = '13916716349'
+          content = '15391822710'
           title = 'Wechat'
           url = 'https://work.weixin.qq.com/kfid/kfc81205348586f98b3'
         [languages.en.params.contacts.3]
