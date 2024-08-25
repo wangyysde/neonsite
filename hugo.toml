@@ -116,7 +116,7 @@ tableOfContents =true
           fontname = 'fab fa-weixin'
           content = '1539182270'
           title = '微信客服'
-          url = 'https://work.weixin.qq.com/kfid/kfc81205348586f98b3'
+          url = ''
         [languages.zh.params.contacts.3]
           fontname = 'fab fa-qq'
           content = '150694131'
@@ -231,9 +231,14 @@ tableOfContents =true
           fontname = 'fab fa-weixin'
           content = '15391822710'
           title = 'Wechat'
-          url = 'https://work.weixin.qq.com/kfid/kfc81205348586f98b3'
+          url = ''
         [languages.en.params.contacts.3]
           fontname = 'fab fa-skype'
           content = 'neonsports@163.com'
           title = 'Skype'
           url = 'https://join.skype.com/invite/rdX35sOidYO3'
+        [languages.en.params.contacts.4]
+          fontname = 'fab fa-whatsapp'
+          content = '+8615391822710'
+          title = 'WhatsApp'
+          url = 'https://api.whatsapp.com/send/?phone=8615391822710'
