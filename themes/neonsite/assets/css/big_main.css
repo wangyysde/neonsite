@@ -1,12 +1,86 @@
-body {
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body html{
   color: #222;
-  font-family: sans-serif;
-  line-height: 1.5;
   margin-top: 0px;
   margin-left: 5px;
   width: 100%;
   align-content: center;
+  transform-origin: left top;
+  font-size: 62.5%;
 }
+.mobile_header{
+  display: none;
+}
+.header {
+  width:100%;
+  margin:0px auto;
+  display: flex;
+}
+
+.logo_container {
+  float: left;
+  display: block;
+}
+
+.companyname_container {
+  float: left;
+  display: block;
+}
+
+.menu_div_big {
+  float: left;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  flex: 1;
+}
+
+.menu_div_big li {
+  float: left;
+  list-style: none;
+  margin-left: 10px;
+}
+
+.menu_div_big a {
+  color: #222222b5;
+}
+
+.menu_div_big a:hover{
+  color: #ff0000;
+}
+
+.menu_div_tiny{
+  display: none;
+}
+
+.language_navigation_big {
+  float: right;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 6rem;
+}
+
+.language_navigation_big li {
+  float: right;
+  list-style: none;
+  margin-right: 10px;
+
+}
+
+.language_navigation_big a {
+  color: #222222b5;
+}
+
+.language_navigation_big a:hover{
+  color: #ff0000;
+}
+
+
 
 
 footer {
@@ -21,11 +95,7 @@ a {
   text-decoration: none;
 }
 
-.header {
-  width:100%;
-  height:80px;
-  margin:0px auto;
-}
+
 
 .header_left {
   float: left;
@@ -35,51 +105,13 @@ a {
 
 .header_middle {
   float: left;
-  width: 270px;
-  height: 80px;
-}
-.menu_div {
-  float: left;
-  display: flex;
-  align-items: center;
   height: 80px;
 }
 
-.menu_div li {
-  float: left;
-  list-style: none;
-  margin-left: 10px;
-}
 
-.menu_div a {
-  color: #222222b5;
-}
 
-.menu_div a:hover{
-  color: #ff0000;
-}
 
-.header_right {
-  float: right;
-  display: flex;
-  align-items: center;
-  height: 80px;
-}
 
-.header_right li {
-  float: right;
-  list-style: none;
-  margin-right: 10px;
-
-}
-
-.header_right a {
-  color: #222222b5;
-}
-
-.header_right a:hover{
-  color: #ff0000;
-}
 
 
 .homeaboutus {

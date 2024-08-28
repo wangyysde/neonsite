@@ -40,6 +40,26 @@ tableOfContents =true
         name = '联系我们'
         pageRef = '/contact'
         weight = 60
+      [[languages.zh.menus.main]]
+        name = '常见问题'
+        pageRef = '/faq'
+        weight = 70
+      [[languages.zh.menus.tiny]]
+        name = '产品中心'
+        pageRef = '/products'
+        weight = 30
+      [[languages.zh.menus.tiny]]
+        name = '高端定制'
+        pageRef = '/products/customization'
+        weight = 40
+      [[languages.zh.menus.tiny]]
+        name = '诚招代理'
+        pageRef = '/agent'
+        weight = 50
+      [[languages.zh.menus.tiny]]
+        name = '联系我们'
+        pageRef = '/contact'
+        weight = 60
     [languages.zh.params]
       productscatalories = '产品类别'
       mission = '专注于热升华转印运动服装的领先公司'
@@ -150,11 +170,27 @@ tableOfContents =true
       [[languages.en.menus.main]]
         name = 'Recruit Agents'
         pageRef = '/agent'
-        weight = 40
+        weight = 50
       [[languages.en.menus.main]]
         name = 'Contact'
         pageRef = '/contact'
-        weight = 50
+        weight = 60
+      [[languages.en.menus.main]]
+        name = 'FAQ'
+        pageRef = '/faq'
+        weight = 70
+      [[languages.en.menus.tiny]]
+        name = 'Products'
+        pageRef = '/products'
+        weight = 30
+      [[languages.en.menus.tiny]]
+        name = 'Customization'
+        pageRef = '/products/customization'
+        weight = 40
+      [[languages.en.menus.tiny]]
+        name = 'Contact'
+        pageRef = '/contact'
+        weight = 60
     [languages.en.params]
       productscatalories = 'Product Categories'
       mission = 'A leading company dedicated to advancing sublimation printing sportswear'

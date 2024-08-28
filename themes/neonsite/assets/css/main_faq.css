@@ -1,11 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@media screen {
+  
+}
+
+
+
 body {
   color: #222;
-  font-family: sans-serif;
-  line-height: 1.5;
+  font-size: 20px;
+//  font-family: sans-serif;
+//  line-height: 1.5;
   margin-top: 0px;
-  margin-left: 5px;
-  width: 100%;
+  margin-left: 0px;
+  width: 1920px;
   align-content: center;
+  transform-origin: left top;
 }
 
 
@@ -23,7 +36,6 @@ a {
 
 .header {
   width:100%;
-  height:80px;
   margin:0px auto;
 }
 
@@ -35,7 +47,6 @@ a {
 
 .header_middle {
   float: left;
-  width: 270px;
   height: 80px;
 }
 .menu_div {
