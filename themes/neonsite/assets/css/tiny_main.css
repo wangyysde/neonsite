@@ -22,6 +22,14 @@ body html{
     justify-content: space-between;
 }
 
+.menu_div a {
+    color: #222222b5;
+}
+
+.menu_div a:hover{
+    color: #ff0000;
+}
+
 .headermenuli_big{
     display: none;
 }
@@ -137,9 +145,9 @@ body html{
 
 .home_productscatalories {
     width:100%;
-    margin-top: 1.5rem;
+    margin-top: 3.5rem;
     color: #005eb6;
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
     align-content: center;
     align-items: center;
@@ -412,4 +420,107 @@ footer {
     text-align: center;
     align-content: center;
     align-items: center;
+}
+
+.customizationtip {
+    width:100%;
+    height:1rem;
+    color: #222222b5;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.customizationkindblock {
+    width:100%;
+    margin-top: 0rem;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.customizationkinditem {
+    width: 8rem;
+    height: 8rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.customizationprocessblock{
+    width:100%;
+    margin-top: 40px;
+    background-color: #eee;
+    height: 25rem;
+}
+
+.customizationitem {
+    text-align: center;
+    width: 5rem;
+}
+
+.customizationline {
+    display: none;
+}
+
+.customizationline_tiny {
+    width:100%;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    float: left;
+}
+
+.customizationline_tiny a{
+    text-decoration: none;
+}
+
+.customizationitem_tiny {
+    display: flex;
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+
+.customizationtitle_tiny{
+    color: #0066cc;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 2rem;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    border-bottom: 5px solid #0066cc;
+}
+
+.customizationtip_tiny{
+    color: #8e8e8e;
+    font-size: 0.8rem;
+    height: 2rem;
+    margin-left: 1rem;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.clustomizationarror_tiny{
+    color: #0066cc;
+    text-align: center;
+    width: 4rem;
+    font-weight: 700;
+    font-size: 2rem;
 }
