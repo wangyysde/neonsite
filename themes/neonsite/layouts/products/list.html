@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="homeaboutus">
+<div class="home_productscatalories">
     <b>{{- .Site.Params.productscatalories -}} </b>
 </div>
 
@@ -7,39 +7,33 @@
     {{- .Site.Params.mission -}}
 </div>
 
-{{ $started := 0 }}
 <div class="homecategoryblock">
-    {{ range $index, $category := .Site.Params.products }}
-    {{ if eq (mod $index 5) 0 }}
-    {{ if eq $started 1 }}
-</div>
-{{ end }}
-<div class="homecategoryline">
-    {{ $started = 1}}
-    {{ end }}
-    <a href="{{- $category.url -}}" target="_blank">
+    <div class="homecategorycontent">
+        {{ range $index, $category := .Site.Params.products }}
+
         <div class="homecategoryitem" >
-            <div>
-                <img src="{{- $category.pic -}} ">
-            </div>
-            <div class="homecategorytitleblock">
-                <div class="homecategorytitleblockleft">
-                    <div class="homecategorytitleblocktitle">
-                        <b> {{ $category.title }} </b>
+            <a href="/{{- $.Language.Lang -}}/products/{{- $category.url -}}" target="_blank">
+                <div>
+                    <img src="{{- $category.pic -}} ">
+                </div>
+                <div class="homecategorytitleblock">
+                    <div class="homecategorytitleblockleft">
+                        <div class="homecategorytitleblocktitle">
+                            <b> {{ $category.title }} </b>
+                        </div>
+                        <div class="homecategorytitleblocktip">
+                            {{- $.Site.Params.productstip -}}
+                        </div>
                     </div>
-                    <div class="homecategorytitleblocktip">
-                        {{- $.Site.Params.productstip -}}
+                    <div class="homecategorytitleblockright">
+                        <i class="fas fa-forward"></i>
                     </div>
                 </div>
-                <div class="homecategorytitleblockright">
-                    <i class="fas fa-forward"></i>
-                </div>
-            </div>
+            </a>
         </div>
-    </a>
-    {{ end }}
-    {{ if eq $started 1 }}
+
+        {{ end }}
+    </div>
 </div>
-{{ end }}
-</div>
+
 {{ end }}
