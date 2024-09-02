@@ -393,3 +393,23 @@ footer {
     align-items: center;
     padding-bottom: 0.5rem;
 }
+
+.company_aboutus {
+    width:100%;
+    margin-top: 1.5rem;
+    color: #005eb6;
+    font-size: 2rem;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.company_mission {
+    width:100%;
+    margin:0px auto;
+    color: #222222b5;
+    font-size: 1rem;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}

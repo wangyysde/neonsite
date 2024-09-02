@@ -1,47 +1,109 @@
 {{ define "main" }}
 <style type="text/css">
-    .middle {
-        width:100%;
-        height:400px;
-        margin:0px auto;
-        background: url("{{- .Params.bannerimage -}}");
-        background-size: cover;
-        background-position: center;
+    @media screen and (max-width: 600px){
+        .middle{
+            display: none;
+        }
+        .companydoor{
+            display: none;
+        }
     }
 
-    .companydoor {
-        width:100%;
-        height:400px;
-        margin:0px auto;
-        background: url("/images/company/door.png");
-        background-size: cover;
-        background-position: center;
+    @media screen and (min-width: 601px) and (max-width: 900px){
+        .middle{
+            display: none;
+        }
+        .companydoor{
+            display: none;
+        }
     }
 
-    .companydata {
-        width:100%;
-        height:140px;
-        margin:0px auto;
-        background: url("{{- .Params.companydatapic -}}");
-        background-size: cover;
-        background-position: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
+    @media screen and (min-width: 901px) and (max-width: 1220px){
+        .middle {
+            width:100%;
+            height:16rem;
+            margin:0px auto;
+            background: url("{{- .Params.bannerimage -}}");
+            background-size: cover;
+            background-position: center;
+        }
+        .companydoor{
+            width:100%;
+            height:15rem;
+            margin:0px auto;
+            background: url("/images/company/door.png");
+            background-size: cover;
+            background-position: center;
+        }
+        .companydata {
+            width: 70%;
+            height: 5em;
+            margin: 0px auto;
+            background: url("{{- .Params.companydatapic -}}");
+            background-size: cover;
+            background-position: center;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        .homebrandstrengthitem {
+            width: 13rem;
+            height: 22rem;
+            background: url("/images/company/brand-bg.png");
+            background-size: cover;
+            background-position: center;
+            float: left;
+            margin-left: 0.2rem;
+            margin-right: 0.2rem;
+            box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.4),
+            -1px -1px 2px 0px rgba(0, 0, 0, 0.2);
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
     }
+    @media screen and (min-width: 1221px) {
+        .middle {
+            width:100%;
+            height:25rem;
+            margin:0px auto;
+            background: url("{{- .Params.bannerimage -}}");
+            background-size: cover;
+            background-position: center;
+        }
 
-    .homebrandstrengthitem {
-        width: 290px;
-        height: 420px;
-        background: url("/images/company/brand-bg.png");
-        background-size: cover;
-        background-position: center;
-        float: left;
-        margin-left: 10px;
-        margin-right: 10px;
-        box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.4),
-        -1px -1px 2px 0px rgba(0, 0, 0, 0.2);
-        border-top-right-radius: 30px;
-        border-bottom-left-radius: 30px;
+        .companydoor {
+            width:100%;
+            height:20rem;
+            margin:0px auto;
+            background: url("/images/company/door.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .companydata {
+            width:70%;
+            height:7em;
+            margin:0px auto;
+            background: url("{{- .Params.companydatapic -}}");
+            background-size: cover;
+            background-position: center;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .homebrandstrengthitem {
+            width: 280px;
+            height: 370px;
+            background: url("/images/company/brand-bg.png");
+            background-size: cover;
+            background-position: center;
+            float: left;
+            margin-left: 10px;
+            margin-right: 10px;
+            box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.4),
+            -1px -1px 2px 0px rgba(0, 0, 0, 0.2);
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
     }
 </style>
 
@@ -51,6 +113,15 @@
 </div>
 
 <div class="companydata" >
+</div>
+
+<!-- starting of brand strength -->
+<div class="company_aboutus">
+    <b>{{- .Params.aboutustitle -}} </b>
+</div>
+
+<div class="company_mission">
+    {{- .Params.mission -}}
 </div>
 
 <div class="homeaboutuscontent">
@@ -64,7 +135,7 @@
 <!-- endding of about us -->
 
 <!-- starting of brand strength -->
-<div class="homebrandstrengthtitle">
+<div class="home_productscatalories">
     <b>{{- .Params.brandstrength -}} </b>
 </div>
 
@@ -75,11 +146,13 @@
 <div class="homebrandstrengthline">
     {{ range $index, $brand := .Params.strength }}
     <div class="homebrandstrengthitem">
-        <div class="homebrandstrengthlogoline">
-            <div class="homebrandstrengthlogo"><span> <i class="fas {{ $brand.fontname -}}"></i></span> </div>
-        </div>
+        <div class="homebrandstrengthitemtitle">
+            <div class="homebrandstrengthlogoline">
+                <div class="homebrandstrengthlogo"><span> <i class="fas {{ $brand.fontname -}}"></i></span> </div>
+            </div>
 
-        <div class="homebrandstrengthkind"> <b>{{- $brand.title -}} </b></div>
+            <div class="homebrandstrengthkind"> <b>{{- $brand.title -}} </b></div>
+        </div>
         {{ range $ii, $line := $brand.content }}
         <div class="homebrandstrengthcontent"> {{- $line -}} </div>
         {{- end -}}

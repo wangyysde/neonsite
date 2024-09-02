@@ -361,6 +361,13 @@ footer {
   text-align: left;
 }
 
+.company_aboutus{
+  display: none;
+}
+
+.company_mission {
+  display: none;
+}
 /* the following is older */
 
 
