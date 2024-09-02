@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body html{
   color: #222;
   margin-top: 0px;
@@ -464,6 +468,101 @@ footer {
 .customizationline_tiny{
   display: none;
 }
+
+.contactus {
+  width:100%;
+  height:60px;
+  margin-top: 60px;
+  color: #005eb6;
+  font-size: 40px;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+.onlinemessagetip {
+  width:100%;
+  height:50px;
+  margin:0px auto;
+  color: #222222b5;
+  font-size: 12px;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.onlinemessageform{
+  width: 100%;
+}
+
+.onlinemessageformline{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: left;
+  justify-content: left;
+}
+
+.agentinput {
+  width: 240px;
+  height: 30px;
+  margin-left: 40px;
+}
+
+.onlinemessagecontent {
+  width: 1110px;
+  height: 80px;
+  margin-left: 40px;
+}
+
+.verifycode {
+  width: 350px;
+  height: 30px;
+  margin-left: 40px;
+}
+
+.onlinemessageformsubmitline{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.onlinemessageformbutton {
+  height: 30px;
+  width: 150px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #005eb6;
+  font-size: 15px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom: 1px solid #005eb6;
+  border-top: 1px solid #005eb6;
+  border-left: 1px solid #005eb6;
+  border-right: 1px solid #005eb6;
+}
+
+.onlinemessageformbutton:hover {
+  background-color: #005eb6;
+  color: #FFFFFF;
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #FFFFFF;
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+}
+
 
 /* the following is older */
 
