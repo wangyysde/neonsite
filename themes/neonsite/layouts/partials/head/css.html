@@ -1,12 +1,19 @@
-{{- with resources.Get "css/main.css" }}
-  {{- if eq hugo.Environment "development" }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}">
-  {{- else }}
-    {{- with . | minify | fingerprint }}
-      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-    {{- end }}
-  {{- end }}
-{{- end }}
+{{- with resources.Get "css/common.css" }}
+<link rel="stylesheet"  href="{{ .RelPermalink }}" />
+{{- end -}}
+{{- with resources.Get "css/tiny_main.css" }}
+<link rel="stylesheet" media="screen and (max-width: 600px)" href="{{ .RelPermalink }}" />
+{{- end -}}
+{{- with resources.Get "css/big_main.css" }}
+<link rel="stylesheet" media="screen and (min-width: 1221px)" href="{{ .RelPermalink }}" />
+{{- end -}}
+{{- with resources.Get "css/small_main.css" }}
+<link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 900px)" href="{{ .RelPermalink }}" />
+{{- end -}}
+{{- with resources.Get "css/medium_main.css" }}
+<link rel="stylesheet" media="screen and (min-width: 901px) and (max-width: 1220px)" href="{{ .RelPermalink }}" />
+{{- end -}}
+
 
 {{- with resources.Get "css/all.min.css" }}
 {{- if eq hugo.Environment "development" }}

@@ -20,46 +20,49 @@ tableOfContents =true
         name = '网站首页'
         pageRef = '/'
         weight = 10
+        pre = 'tiny'
       [[languages.zh.menus.main]]
         name = '公司简介'
         pageRef = '/company'
         weight = 20
+        pre = 'medium'
       [[languages.zh.menus.main]]
          name = '产品中心'
          pageRef = '/products'
          weight = 30
+         pre = 'medium'
       [[languages.zh.menus.main]]
          name = '高端定制'
          pageRef = '/products/customization'
          weight = 40
+         pre = 'tiny'
       [[languages.zh.menus.main]]
         name = '诚招代理'
         pageRef = '/agent'
         weight = 50
+        pre = 'small'
       [[languages.zh.menus.main]]
         name = '联系我们'
         pageRef = '/contact'
         weight = 60
+        pre = 'tiny'
       [[languages.zh.menus.main]]
         name = '常见问题'
         pageRef = '/faq'
         weight = 70
+        pre = 'medium'
       [[languages.zh.menus.tiny]]
-        name = '产品中心'
-        pageRef = '/products'
-        weight = 30
+        name = '网站首页'
+        pageRef = '/'
+        weight = 10
       [[languages.zh.menus.tiny]]
         name = '高端定制'
         pageRef = '/products/customization'
-        weight = 40
-      [[languages.zh.menus.tiny]]
-        name = '诚招代理'
-        pageRef = '/agent'
-        weight = 50
+        weight = 20
       [[languages.zh.menus.tiny]]
         name = '联系我们'
         pageRef = '/contact'
-        weight = 60
+        weight = 30
     [languages.zh.params]
       productscatalories = '产品类别'
       mission = '专注于热升华转印运动服装的领先公司'
@@ -155,42 +158,49 @@ tableOfContents =true
         name = 'Home'
         pageRef = '/'
         weight = 10
+        pre = 'tiny'
       [[languages.en.menus.main]]
         name = 'Company'
         pageRef = '/company'
         weight = 20
+        pre = 'medium'
       [[languages.en.menus.main]]
         name = 'Products'
         pageRef = '/products'
         weight = 30
+        pre = 'medium'
       [[languages.en.menus.main]]
         name = 'Customization'
         pageRef = '/products/customization'
         weight = 40
+        pre = 'tiny'
       [[languages.en.menus.main]]
         name = 'Recruit Agents'
         pageRef = '/agent'
         weight = 50
+        pre = 'small'
       [[languages.en.menus.main]]
         name = 'Contact'
         pageRef = '/contact'
         weight = 60
+        pre = 'tiny'
       [[languages.en.menus.main]]
         name = 'FAQ'
         pageRef = '/faq'
         weight = 70
+        pre = 'medium'
       [[languages.en.menus.tiny]]
-        name = 'Products'
-        pageRef = '/products'
-        weight = 30
+        name = 'Home'
+        pageRef = '/'
+        weight = 10
       [[languages.en.menus.tiny]]
         name = 'Customization'
         pageRef = '/products/customization'
-        weight = 40
+        weight = 20
       [[languages.en.menus.tiny]]
         name = 'Contact'
         pageRef = '/contact'
-        weight = 60
+        weight = 30
     [languages.en.params]
       productscatalories = 'Product Categories'
       mission = 'A leading company dedicated to advancing sublimation printing sportswear'

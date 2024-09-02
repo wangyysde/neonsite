@@ -1,0 +1,55 @@
+<div class="header">
+    <div class="header_left"><img src="/images/logo.png" height="80px"></div>
+    <div class="header_middle">
+        {{ if eq .Language.Lang "en" }}
+        <img src="/images/name-en.png" height="80px" width="270px">
+        {{ else }}
+        <img src="/images/name-cn.png" height="80px" width="270px">
+        {{ end }}
+    </div>
+    {{ $started := 0 }}
+    <div class="menu_div">
+        {{- range site.Menus.main }}
+        {{ if eq $started 0 }}
+        {{ $started = 1}}
+        {{ else }}
+        &nbsp;—
+        {{ end }}
+        <li>
+            {{if .URL }}
+               <a href="{{ .URL }}">
+            {{ else }}
+                <a href="{{ .PageRef }}">
+            {{ end }}
+           {{ .Name }}
+           {{- with .Page }}
+           {{- with .Params.version -}}
+             ({{ . }}
+           {{- end }}
+           {{- end }}
+          </a>
+        </li>
+        {{ end }}
+
+    </div>
+
+    <div class="header_right">
+
+            <li>
+                {{ if eq .Language.Lang "en" }}
+                <a aria-label="icon" href="/zh"  target="_self">
+                    <i class="fas fa-globe"></i>
+                    <span>中文(简体)</span>
+                </a>
+                {{ else }}
+                <a aria-label="icon" href="/en"  target="_self">
+                    <i class="fas fa-globe"></i>
+                    <span>English</span>
+                </a>
+                {{ end }}
+            </li>
+    </div>
+</div>
+
+
+

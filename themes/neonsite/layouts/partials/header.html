@@ -1,21 +1,39 @@
-<div class="header">
-    <div class="header_left"><img src="/images/logo.png" height="80px"></div>
-    <div class="header_middle">
+<div class="mobile_header">
+    <div class="logo_container_mobile"><img src="/images/logo_73.png" title="{{ site.Title }}"></div>
+    <div class="companyname_container_mobile">
         {{ if eq .Language.Lang "en" }}
-        <img src="/images/name-en.png" height="80px" width="270px">
+        <img src="/images/name-en.png"  >
         {{ else }}
-        <img src="/images/name-cn.png" height="80px" width="270px">
+        <img src="/images/name-cn.png" >
         {{ end }}
     </div>
-    {{ $started := 0 }}
+    <div class="language_navigation_mobile">
+        <i class="fas fa-globe"></i>
+        <li>
+            {{ if eq .Language.Lang "en" }}
+            <a aria-label="icon" href="/zh"  target="_self">
+                <span>中文(简体)</span>
+            </a>
+            {{ else }}
+            <a aria-label="icon" href="/en"  target="_self">
+                <span>English</span>
+            </a>
+            {{ end }}
+        </li>
+    </div>
+</div>
+<div class="header">
+    <div class="logo_container"><img src="/images/logo_73.png" title="{{ site.Title }}"></div>
+    <div class="companyname_container">
+        {{ if eq .Language.Lang "en" }}
+        <img src="/images/name-en.png"  >
+        {{ else }}
+        <img src="/images/name-cn.png" >
+        {{ end }}
+    </div>
     <div class="menu_div">
         {{- range site.Menus.main }}
-        {{ if eq $started 0 }}
-        {{ $started = 1}}
-        {{ else }}
-        &nbsp;—
-        {{ end }}
-        <li>
+        <li class="headermenuli_{{- .Pre -}}">
             {{if .URL }}
                <a href="{{ .URL }}">
             {{ else }}
@@ -33,7 +51,7 @@
 
     </div>
 
-    <div class="header_right">
+    <div class="language_navigation_big">
 
             <li>
                 {{ if eq .Language.Lang "en" }}
@@ -50,6 +68,3 @@
             </li>
     </div>
 </div>
-
-
-
