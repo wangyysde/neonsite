@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
 <head>
-  {{ partial "head_faq.html" . }}
+  {{ partial "head.html" . }}
 </head>
 <body>
   <header>
-    {{ partial "header_faq.html" . }}
+    {{ partial "header.html" . }}
   </header>
-  <!--
+
   <main>
+    <div class="faq_main">
     {{ block "main" . }}{{ end }}
+    </div>
   </main>
   <footer>
     {{ partial "footer.html" . }}
   </footer>
-  -->
 </body>
 </html>

@@ -622,3 +622,114 @@ footer {
     border-left: 1px solid #FFFFFF;
     border-right: 1px solid #FFFFFF;
 }
+
+/* starting of contact */
+.contactmethodblock {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+    margin-bottom: 60px;
+    color: #005eb6;
+}
+.contactmethodblock a {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    color: #005eb6;
+}
+
+.contactmethodblock a:hover {
+    color: #ff0000;
+}
+
+.contactmethoditem {
+    width: 100%;
+    margin-left: 20px;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contactmethodlogo {
+    width: 3rem;
+    background: #FFFFFF;
+    height: 3rem;
+    border-radius: 50%;
+
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contactmethodtitle {
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.contactmethodcontent {
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.faq_main{
+    margin-left: 2rem;
+}
+
+.faq_main h1 {
+    display: block;
+    font-size: 2rem;
+    margin-block-start: 0.67rem;
+    margin-block-end: 0.67rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.faq_main h2 {
+    margin-bottom: 1rem;
+    display: block;
+    font-size: 1.5rem;
+    margin-block-start: 0.83rem;
+    margin-block-end: 0.83rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.faq_main pre {
+    margin-left: 1rem;
+    display: block;
+    font-size: 1rem;
+    margin-block-start: 0.83rem;
+    margin-block-end: 0.83rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.faq_main pre code {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    white-space: pre-line;
+}
+
+/*ending of contact */
