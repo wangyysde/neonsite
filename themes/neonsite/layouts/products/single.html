@@ -4,26 +4,18 @@
         {{ partial "products/productleft.html" . }}
     </div>
     <div class="productsinglerightcontent">
-        <div class="homeaboutus">
+        <div class="home_productscatalories">
             <b>{{- .Params.currenttitle -}} </b>
         </div>
         <div class="homemission">
             {{- .Site.Params.mission -}}
         </div>
-        <div >
-            {{ $started := 0 }}
+        <div class="productsingleproductitemblock">
             {{ range $index, $category := .Params.products }}
-                {{ if eq (mod $index 4) 0 }}
-                    {{ if eq $started 1 }}
-                        </div>
-                    {{ end }}
-                    <div class="productsinglline">
-                    {{ $started = 1}}
-                {{- end -}}
                 <a href="/{{- $.Language.Lang -}}/contact/" target="_blank">
                 <div class="productsingleitem" >
                     <div>
-                        <img src="{{- $category.pic -}} " width="210px" height="250px">
+                        <img src="{{- $category.pic -}} " >
                     </div>
                     <div class="productsingletitleblock">
                         <b> {{ $category.title }} </b>
