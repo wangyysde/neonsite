@@ -5,9 +5,12 @@
 <meta name="viewport" content="width=device-width">
 <title> | 上海聚余服饰有限公司</title>
 
-      <link rel="stylesheet" href="/css/main.min.39f8ba56fbfcfcc5ff64e55090a2f3d68e809e47a1eb5006c616d10e3d594d73.css" integrity="sha256-Ofi6Vvv8/MX/ZOVQkKLz1o6Ankeh61AGxhbRDj1ZTXM=" crossorigin="anonymous">
+<link rel="stylesheet"  href="/css/common.css" />
+<link rel="stylesheet" media="screen and (max-width: 600px)" href="/css/tiny_main.css" />
+<link rel="stylesheet" media="screen and (min-width: 1221px)" href="/css/big_main.css" />
+<link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 900px)" href="/css/small_main.css" />
+<link rel="stylesheet" media="screen and (min-width: 901px) and (max-width: 1220px)" href="/css/medium_main.css" />
 <link rel="stylesheet" href="/css/all.min.min.c1fb7484bf22344d06bc60d47674585fea13a654ae76d53e8ddd605844cb5463.css" integrity="sha256-wft0hL8iNE0GvGDUdnRYX&#43;oTplSudtU&#43;jd1gWETLVGM=" crossorigin="anonymous">
-<link rel="stylesheet" href="/css/contact.min.8d8f475712ebc0558dbce50bc26ffa02e0b538362413c147ecaab9b32b04ee13.css" integrity="sha256-jY9HVxLrwFWNvOULwm/6AuC1ODYkE8FH7Kq5sysE7hM=" crossorigin="anonymous">
 
 <link rel="icon" href="/favicon.png"  />
 
@@ -18,19 +21,33 @@
 </head>
 <body>
   <header>
-    <div class="header">
-    <div class="header_left"><img src="/images/logo.png" height="80px"></div>
-    <div class="header_middle">
+    <div class="mobile_header">
+    <div class="logo_container_mobile"><img src="/images/logo_73.png" title="上海聚余服饰有限公司"></div>
+    <div class="companyname_container_mobile">
         
-        <img src="/images/name-cn.png" height="80px" width="270px">
+        <img src="/images/name-cn.png" >
         
     </div>
-    
-    <div class="menu_div">
-        
-        
-        
+    <div class="language_navigation_mobile">
+        <i class="fas fa-globe"></i>
         <li>
+            
+            <a aria-label="icon" href="/en"  target="_self">
+                <span>English</span>
+            </a>
+            
+        </li>
+    </div>
+</div>
+<div class="header">
+    <div class="logo_container"><img src="/images/logo_73.png" title="上海聚余服饰有限公司"></div>
+    <div class="companyname_container">
+        
+        <img src="/images/name-cn.png" >
+        
+    </div>
+    <div class="menu_div">
+        <li class="headermenuli_tiny">
             
                <a href="/zh/">
             
@@ -38,10 +55,7 @@
           </a>
         </li>
         
-        
-        &nbsp;—
-        
-        <li>
+        <li class="headermenuli_medium">
             
                <a href="/zh/company/">
             
@@ -49,10 +63,7 @@
           </a>
         </li>
         
-        
-        &nbsp;—
-        
-        <li>
+        <li class="headermenuli_medium">
             
                <a href="/zh/products/">
             
@@ -60,10 +71,7 @@
           </a>
         </li>
         
-        
-        &nbsp;—
-        
-        <li>
+        <li class="headermenuli_tiny">
             
                <a href="/zh/products/customization/">
             
@@ -71,10 +79,7 @@
           </a>
         </li>
         
-        
-        &nbsp;—
-        
-        <li>
+        <li class="headermenuli_small">
             
                <a href="/zh/agent/">
             
@@ -82,10 +87,7 @@
           </a>
         </li>
         
-        
-        &nbsp;—
-        
-        <li>
+        <li class="headermenuli_tiny">
             
                <a href="/zh/contact/">
             
@@ -93,10 +95,7 @@
           </a>
         </li>
         
-        
-        &nbsp;—
-        
-        <li>
+        <li class="headermenuli_medium">
             
                <a href="/zh/faq/">
             
@@ -107,7 +106,7 @@
 
     </div>
 
-    <div class="header_right">
+    <div class="language_navigation_big">
 
             <li>
                 
@@ -120,55 +119,114 @@
     </div>
 </div>
 
-
-
-
   </header>
   <main>
     
 <style type="text/css">
-    .middle {
-        width:100%;
-        height:400px;
-        margin:0px auto;
-        background: url("/images/bg-cn.png");
-        background-size: cover;
-        background-position: center;
+    @media screen and (max-width: 600px){
+        .middle{
+            display: none;
+        }
+        .companydoor{
+            display: none;
+        }
     }
 
-    .companydoor {
-        width:100%;
-        height:400px;
-        margin:0px auto;
-        background: url("/images/company/door.png");
-        background-size: cover;
-        background-position: center;
+    @media screen and (min-width: 601px) and (max-width: 900px){
+        .middle{
+            display: none;
+        }
+        .companydoor{
+            display: none;
+        }
     }
 
-    .companydata {
-        width:100%;
-        height:140px;
-        margin:0px auto;
-        background: url("/images/company/companydata-cn.png");
-        background-size: cover;
-        background-position: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
+    @media screen and (min-width: 901px) and (max-width: 1220px){
+        .middle {
+            width:100%;
+            height:16rem;
+            margin:0px auto;
+            background: url("/images/bg-cn.png");
+            background-size: cover;
+            background-position: center;
+        }
+        .companydoor{
+            width:100%;
+            height:15rem;
+            margin:0px auto;
+            background: url("/images/company/door-960.png");
+            background-size: cover;
+            background-position: center;
+        }
+        .companydata {
+            width: 70%;
+            height: 5em;
+            margin: 0px auto;
+            background: url("/images/company/companydata-cn.png");
+            background-size: cover;
+            background-position: center;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        .homebrandstrengthitem {
+            width: 13rem;
+            height: 22rem;
+            background: url("/images/company/brand-bg.png");
+            background-size: cover;
+            background-position: center;
+            float: left;
+            margin-left: 0.2rem;
+            margin-right: 0.2rem;
+            box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.4),
+            -1px -1px 2px 0px rgba(0, 0, 0, 0.2);
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
     }
+    @media screen and (min-width: 1221px) {
+        .middle {
+            width:100%;
+            height:25rem;
+            margin:0px auto;
+            background: url("/images/bg-cn.png");
+            background-size: cover;
+            background-position: center;
+        }
 
-    .homebrandstrengthitem {
-        width: 290px;
-        height: 420px;
-        background: url("/images/company/brand-bg.png");
-        background-size: cover;
-        background-position: center;
-        float: left;
-        margin-left: 10px;
-        margin-right: 10px;
-        box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.4),
-        -1px -1px 2px 0px rgba(0, 0, 0, 0.2);
-        border-top-right-radius: 30px;
-        border-bottom-left-radius: 30px;
+        .companydoor {
+            width:100%;
+            height:20rem;
+            margin:0px auto;
+            background: url("/images/company/door-960.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .companydata {
+            width:70%;
+            height:7em;
+            margin:0px auto;
+            background: url("/images/company/companydata-cn.png");
+            background-size: cover;
+            background-position: center;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .homebrandstrengthitem {
+            width: 280px;
+            height: 370px;
+            background: url("/images/company/brand-bg.png");
+            background-size: cover;
+            background-position: center;
+            float: left;
+            margin-left: 10px;
+            margin-right: 10px;
+            box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.4),
+            -1px -1px 2px 0px rgba(0, 0, 0, 0.2);
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
     }
 </style>
 
@@ -179,6 +237,13 @@
 
 <div class="companydata" >
 </div>
+
+
+<div class="company_aboutus">
+    <b>关于聚余</b>
+</div>
+
+<div class="company_mission">专注于热升华转印运动服装的领先公司</div>
 
 <div class="homeaboutuscontent">
     <div class="homeaboutustext">
@@ -197,7 +262,7 @@
 
 
 
-<div class="homebrandstrengthtitle">
+<div class="home_productscatalories">
     <b>品牌优势</b>
 </div>
 
@@ -206,38 +271,46 @@
 <div class="homebrandstrengthline">
     
     <div class="homebrandstrengthitem">
-        <div class="homebrandstrengthlogoline">
-            <div class="homebrandstrengthlogo"><span> <i class="fas fa-edit"></i></span> </div>
-        </div>
+        <div class="homebrandstrengthitemtitle">
+            <div class="homebrandstrengthlogoline">
+                <div class="homebrandstrengthlogo"><span> <i class="fas fa-edit"></i></span> </div>
+            </div>
 
-        <div class="homebrandstrengthkind"> <b>研发创新</b></div>
+            <div class="homebrandstrengthkind"> <b>研发创新</b></div>
+        </div>
         
         <div class="homebrandstrengthcontent">1.我们每年会开发出超过300种新产品以满足不同用户的需求。</div>
         <div class="homebrandstrengthcontent">2.持续地从用户那里收集新的需求和反馈。</div></div>
     <div class="homebrandstrengthitem">
-        <div class="homebrandstrengthlogoline">
-            <div class="homebrandstrengthlogo"><span> <i class="fas fa-recycle"></i></span> </div>
-        </div>
+        <div class="homebrandstrengthitemtitle">
+            <div class="homebrandstrengthlogoline">
+                <div class="homebrandstrengthlogo"><span> <i class="fas fa-recycle"></i></span> </div>
+            </div>
 
-        <div class="homebrandstrengthkind"> <b>绿色发展</b></div>
+            <div class="homebrandstrengthkind"> <b>绿色发展</b></div>
+        </div>
         
         <div class="homebrandstrengthcontent">1.我们的愿景是，到2025年我们的产品均将使用可回收材料，并积极开发环保包装。</div>
         <div class="homebrandstrengthcontent">2.此外，随着纸基包装等全新发展，我们减少了数百吨一次性塑料废物。</div></div>
     <div class="homebrandstrengthitem">
-        <div class="homebrandstrengthlogoline">
-            <div class="homebrandstrengthlogo"><span> <i class="fas fa-share"></i></span> </div>
-        </div>
+        <div class="homebrandstrengthitemtitle">
+            <div class="homebrandstrengthlogoline">
+                <div class="homebrandstrengthlogo"><span> <i class="fas fa-share"></i></span> </div>
+            </div>
 
-        <div class="homebrandstrengthkind"> <b>领导潮流</b></div>
+            <div class="homebrandstrengthkind"> <b>领导潮流</b></div>
+        </div>
         
         <div class="homebrandstrengthcontent">1.引领自由剪裁风格的新潮流，保护皮肤磨损。</div>
         <div class="homebrandstrengthcontent"> 2.带缝生产线，可使我们承接超低起订量的用户订单。</div></div>
     <div class="homebrandstrengthitem">
-        <div class="homebrandstrengthlogoline">
-            <div class="homebrandstrengthlogo"><span> <i class="fas fa-tag"></i></span> </div>
-        </div>
+        <div class="homebrandstrengthitemtitle">
+            <div class="homebrandstrengthlogoline">
+                <div class="homebrandstrengthlogo"><span> <i class="fas fa-tag"></i></span> </div>
+            </div>
 
-        <div class="homebrandstrengthkind"> <b>研发创新</b></div>
+            <div class="homebrandstrengthkind"> <b>研发创新</b></div>
+        </div>
         
         <div class="homebrandstrengthcontent">1.我们产品的原材料都是取得OEKO-TEX认证的。</div></div>
 
@@ -247,117 +320,101 @@
 
   </main>
   <footer>
-    
-<div class="footer_menu_div">
-    
-       
-    
-     <li>
-        
+    <div class="footer_menu_div">
+     <li class="headermenuli_tiny">
+     
         <a href="/zh/">
-            
+     
                 网站首页
             </a>
     </li>
     
-    
-      &nbsp;-
-    
-     <li>
-        
+     <li class="headermenuli_medium">
+     
         <a href="/zh/company/">
-            
+     
                 公司简介
             </a>
     </li>
     
-    
-      &nbsp;-
-    
-     <li>
-        
+     <li class="headermenuli_medium">
+     
         <a href="/zh/products/">
-            
+     
                 产品中心
             </a>
     </li>
     
-    
-      &nbsp;-
-    
-     <li>
-        
+     <li class="headermenuli_tiny">
+     
         <a href="/zh/products/customization/">
-            
+     
                 高端定制
             </a>
     </li>
     
-    
-      &nbsp;-
-    
-     <li>
-        
+     <li class="headermenuli_small">
+     
         <a href="/zh/agent/">
-            
+     
                 诚招代理
             </a>
     </li>
     
-    
-      &nbsp;-
-    
-     <li>
-        
+     <li class="headermenuli_tiny">
+     
         <a href="/zh/contact/">
-            
+     
                 联系我们
             </a>
     </li>
     
-    
-      &nbsp;-
-    
-     <li>
-        
+     <li class="headermenuli_medium">
+     
         <a href="/zh/faq/">
-            
+     
                 常见问题
             </a>
     </li>
     
 </div>
 
-<div class="footer_menu_div">
+<div class="footer_contact_list">
     
-       <i class="fas fa-phone"></i> &nbsp;&nbsp;
+      <div>
+       <i class="fas fa-phone"></i>
        
        15391822710
-    &nbsp;&nbsp;&nbsp;&nbsp;
+     </div>&nbsp;
    
-       <i class="fas fa-envelope"></i> &nbsp;&nbsp;
+      <div>
+       <i class="fas fa-envelope"></i>
        
           <a href="mailto:%20neonsports@163.com">
       
        neonsports@163.com
           </a>
        
-    &nbsp;&nbsp;&nbsp;&nbsp;
+     </div>&nbsp;
    
-       <i class="fab fa-weixin"></i> &nbsp;&nbsp;
+      <div>
+       <i class="fab fa-weixin"></i>
        
        1539182270
-    &nbsp;&nbsp;&nbsp;&nbsp;
+     </div>&nbsp;
    
-       <i class="fab fa-qq"></i> &nbsp;&nbsp;
+      <div>
+       <i class="fab fa-qq"></i>
        
        150694131
-    &nbsp;&nbsp;&nbsp;&nbsp;
+     </div>&nbsp;
    
 </div>
 
 
-<div class="footer_copyright_div"> Copyright© 2014 - 2024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海聚余服饰有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;    版权所有</div>
+<div class="footer_copyright_div_big"> Copyright© 2014 - 2024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海聚余服饰有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;    版权所有</div>
+<div class="footer_copyright_div_small"> Copyright© 2014 - 2024&nbsp;上海聚余服饰有限公司</div>
+<div class="footer_copyright_div_tiny"> Copyright© 2014 - 2024&nbsp;上海聚余服饰有限公司</div>
 
 
 <script type="text/javascript">
