@@ -46,6 +46,7 @@ body html{
   align-items: center;
   height: 2.5rem;
   justify-content: space-between;
+  font-size: 0.9rem;
 }
 
 .headermenuli_big{
@@ -65,7 +66,7 @@ body html{
 .headermenuli_tiny{
   float: left;
   list-style: none;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .footmenuli_big{
@@ -79,7 +80,7 @@ body html{
 .footmenuli_small{
   float: left;
   list-style: none;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .footmenuli_tiny{
@@ -115,7 +116,6 @@ body html{
 .language_navigation_big li {
   float: right;
   list-style: none;
-  margin-right: 10px;
 
 }
 

@@ -344,17 +344,18 @@ footer {
 }
 
 .homebrandstrengthkind {
-  margin-top: 20px;
-  font-size: 20px;
+  margin-top: 0.5rem;
+  font-size: 1rem;
   color: #FFFFFF;
   text-align: center;
+  font-weight: 900;
 }
 
 .homebrandstrengthcontent {
-  margin-top: 1rem;
-  margin-right: 1.5rem;
-  margin-left: 1.5rem;
-  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
   color: #FFFFFF;
   text-align: left;
 }

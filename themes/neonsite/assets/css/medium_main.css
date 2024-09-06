@@ -53,25 +53,25 @@ body html{
 .headermenuli_big{
   float: left;
   list-style: none;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .headermenuli_medium{
   float: left;
   list-style: none;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .headermenuli_small{
   float: left;
   list-style: none;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .headermenuli_tiny{
   float: left;
   list-style: none;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .menu_div_big li {
@@ -351,7 +351,7 @@ footer {
 
 .homebrandstrengthkind {
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 1rem;
   color: #FFFFFF;
   text-align: center;
 }
@@ -360,7 +360,7 @@ footer {
   margin-top: 0.1rem;
   margin-right: 0.5rem;
   margin-left: 0.5rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #FFFFFF;
   text-align: left;
 }
