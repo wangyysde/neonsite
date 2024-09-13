@@ -33,7 +33,7 @@ tableOfContents =true
          pre = 'medium'
       [[languages.zh.menus.main]]
          name = '高端定制'
-         pageRef = '/products/customization'
+         pageRef = '/products/custom'
          weight = 40
          pre = 'tiny'
       [[languages.zh.menus.main]]
@@ -57,7 +57,7 @@ tableOfContents =true
         weight = 10
       [[languages.zh.menus.tiny]]
         name = '高端定制'
-        pageRef = '/products/customization'
+        pageRef = '/products/custom'
         weight = 20
       [[languages.zh.menus.tiny]]
         name = '联系我们'
@@ -68,11 +68,38 @@ tableOfContents =true
       mission = '专注于热升华转印运动服装的领先公司'
       productstip = '欢迎来电咨询我们的产品'
       contactus = '联系我们'
+      productdetail = "商品详情"
       contactusurl = '/contact'
       onlinemessagetitle = '在线留言'
       onlinemessagetip = '如果您有任何疑问、意见或建议,或需进一步了解产品详细信息,请填写以下表单,以获得及时的帮助与支持'
       companyname = '上海聚余服饰有限公司'
       copyrightmsg = '版权所有'
+      productdetailsizevalueerror = "每个样品订单最多可以订购5件"
+      shippingaddress = "货物收货地址"
+      noshippingaddress = "请输入货物收货地址"
+      yourname = "您的姓名"
+      noyourname = "请输入您的姓名"
+      organizationname = '组织名称'
+      mobile = '手机或电话号码'
+      email = "电子邮箱地址"
+      wechat = '微信号码'
+      skype = 'Skype'
+      whatsApp = 'WhatsApp'
+      ordernote = '订单留言'
+      verifycodemsg = "请输入图片上的验证码"
+      nocontactinformation = "请输入至少一个联系方式"
+      verifycodeurl = "https://www.sysadm.cn/vcode.php"
+      sendmailurl = 'https://www.sysadm.cn/sendemail.php'
+      sendButtontitle = '发送'
+      closeButtontitle = '关闭'
+      ordersamplebuttontitle = '订购样品'
+      orderstartrequestbuttontitle = '订购'
+      jsUnknowError = "未知错误"
+      jsServerError = "服务器处理错误"
+      jsTimeOut = "网络超时"
+      jsParseError = "解析错误"
+      jsSuccessful = "数据发送成功"
+      jsInvalidVcode = "验证码错误"
       [languages.zh.params.products]
         [languages.zh.params.products.0]
           title = '蓝球服'
@@ -170,8 +197,8 @@ tableOfContents =true
         weight = 30
         pre = 'medium'
       [[languages.en.menus.main]]
-        name = 'Customization'
-        pageRef = '/products/customization'
+        name = 'Custom'
+        pageRef = '/products/custom'
         weight = 40
         pre = 'tiny'
       [[languages.en.menus.main]]
@@ -194,8 +221,8 @@ tableOfContents =true
         pageRef = '/'
         weight = 10
       [[languages.en.menus.tiny]]
-        name = 'Customization'
-        pageRef = '/products/customization'
+        name = 'Custom'
+        pageRef = '/products/custom'
         weight = 20
       [[languages.en.menus.tiny]]
         name = 'Contact'
@@ -206,11 +233,38 @@ tableOfContents =true
       mission = 'A leading company dedicated to advancing sublimation printing sportswear'
       productstip = 'Welcome to inquire about our products'
       contactus = 'Contact Us'
+      productdetail = "Details"
       contactusurl = '/contact'
       onlinemessagetitle = 'Online Message'
       onlinemessagetip = 'If you have any questions, comments or suggestions, or need further information about the product, please fill out the following form'
       companyname = 'Shanghai Neon SportsWear Co;Ltd'
       copyrightmsg = 'All rights reserved'
+      productdetailsizevalueerror = "Maximum order quantity 5 piece"
+      shippingaddress = "Shipping Address"
+      noshippingaddress = "Please input shipping address"
+      yourname = "Your Name"
+      noyourname = "Please input your name"
+      organizationname = 'Organization Name'
+      mobile = 'MP/Tel'
+      email = 'Email Address'
+      wechat = 'Wechat'
+      skype = 'Skype'
+      whatsApp = 'WhatsApp'
+      ordernote = 'Order Note'
+      verifycodemsg = "Please input the verify code on the picture"
+      verifycodeurl = "https://www.sysadm.cn/vcode.php"
+      sendmailurl = 'https://www.sysadm.cn/sendemail.php'
+      sendButtontitle = 'Sent'
+      closeButtontitle = 'Close'
+      ordersamplebuttontitle = 'Order Sample'
+      orderstartrequestbuttontitle = 'Order Request'
+      nocontactinformation = "Please enter at least one contact information"
+      jsUnknowError = "Unknow Error"
+      jsServerError = "Server Error"
+      jsTimeOut = "TimeOut"
+      jsParseError = "Parsing Error"
+      jsSuccessful = "data has be sent"
+      jsInvalidVcode = "Verify code Incorret"
       [languages.en.params.products]
         [languages.en.params.products.0]
           title = 'Basketball'

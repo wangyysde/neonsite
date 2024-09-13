@@ -4,7 +4,6 @@ date = 2024-07-29T09:10:37+08:00
 draft = true
 [params]
   onlinemessageaction = 'https://www.sysadm.cn/sendemail.php'
-  yourname = '您的姓名' 
   contactway = '联系方式'
   organizationname = '组织名称'
   onlinemessagecontent = '备注内容'

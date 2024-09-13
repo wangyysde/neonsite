@@ -731,12 +731,49 @@ footer {
 }
 
 .productsingletitleblock{
-  width: 100%;
+  width: 90%;
   margin-top: 10px;
   font-size: 12px;
   margin-bottom: 5px;
   color: #005eb6;
+  margin-left: 0.5rem;
+  text-align: left;
 }
+
+.productsingletitleblock img {
+  width: 2rem;
+}
+
+.productsinglepricescope{
+  width: 90%;
+  margin-top: 10px;
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #005eb6;
+  margin-left: 0.5rem;
+  text-align: center;
+}
+
+.productsingleshipway{
+  width: 90%;
+  margin-top: 10px;
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #005eb6;
+  margin-left: 0.5rem;
+  text-align: left;
+}
+
+.productsingleminororder{
+  width: 90%;
+  margin-top: 5px;
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #005eb6;
+  margin-left: 0.5rem;
+  text-align: left;
+}
+
 
 .productsinglecontactusline{
   margin-top: 10px;

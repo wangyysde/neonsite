@@ -1,15 +1,15 @@
 +++
-title = 'Customization'
+title = 'Custom Products'
 date = 2024-07-28T10:28:16+08:00
 draft = true
 layout = 'customization'
 [params]
-  customizationtitle = 'A Wide Range of Customized Products'
+  customizationtitle = 'A Wide Range of Custome Products'
   customizationtip = 'Each product has passed strict quality control'
-  customizationprocesstitle = 'Customization Process'
-  customizationprocesstip = 'Super Easy Customization Process'
+  customizationprocesstitle = 'Custom Process'
+  customizationprocesstip = 'Super Easy Custom Process'
   processStep1Title = 'Call Customer Service'
-  processStep1Info = 'Beautiful Customization, From Now On'
+  processStep1Info = 'Beautiful Custom, From Now On'
   processStep2Title = 'Scheme Submission'
   processStep2Info = 'Drawing Design, Quotation'
   processStep3Title = 'Sample Confirmation'

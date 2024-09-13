@@ -12,17 +12,48 @@
         </div>
         <div class="productsingleproductitemblock">
             {{ range $index, $category := .Params.products }}
-                <a href="/{{- $.Language.Lang -}}/contact/" target="_blank">
-                <div class="productsingleitem" >
+                {{ if $category.id }}
+                <a href="/{{- $.Language.Lang -}}/products/{{- $.Params.currenturl -}}_details{{- $category.id -}}/" target="_blank">
+                {{ else }}
+                    <a href="/{{- $.Language.Lang -}}/{{- $.Site.Params.contactusurl -}}/" target="_blank">
+                {{ end }}
+                  <div class="productsingleitem" >
                     <div>
                         <img src="{{- $category.pic -}} " >
                     </div>
                     <div class="productsingletitleblock">
-                        <b> {{ $category.title }} </b>
+                       <img src="/images/super.png">
+                        {{ if gt ($category.title | strings.RuneCount) 40 }}
+                        {{ substr $category.title  0 40 }}...
+                        {{else}}
+                        {{- $category.title  -}}
+                        {{ end }}
                     </div>
+                    {{ if $category.pricescope }}
+                      <div class="productsinglepricescope" >
+                          <b>
+                         {{- $category.pricescope -}}
+                          </b>
+                      </div>
+                    {{ end }}
+                    {{ if $.Params.shippingway }}
+                        <div class="productsingleshipway">
+                            {{- $.Params.shippingway }}
+                        </div>
+                    {{ end }}
+                    {{ if $.Params.minororder }}
+                    <div class="productsingleminororder">
+                      <b> Min Order:</b> {{- $.Params.minororder }}
+                    </div>
+                    {{ end }}
+
                     <div class="productsinglecontactusline">
                     <div class="productsinglecontactus">
-                       {{- $.Site.Params.contactus -}}
+                        {{ if $category.id }}
+                       {{- $.Site.Params.productdetail -}}
+                        {{ else }}
+                        {{- $.Site.Params.contactus -}}
+                        {{ end }}
                     </div>
                     </div>
                 </div>

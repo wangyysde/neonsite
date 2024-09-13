@@ -7,8 +7,8 @@ draft = true
 ## What is the lead time?
     Depending on the number of products ordered:
     1. Orders of less than 100 pieces will take 7 days or less
-    2. Orders of 100 to 500 pieces will take 10 days or less
-    3. Orders of more than 500 pieces will take 15 days or less
+    2. Orders of 100 to 500 pieces will take 25 days or less
+    3. Orders of more than 500 pieces to be negotiated
     We accept rush orders as well. Depending on complexity, we can complete within 3-7 days.
 
 ## What are the payment methods?

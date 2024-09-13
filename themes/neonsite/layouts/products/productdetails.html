@@ -1,0 +1,368 @@
+{{ define "main" }}
+<script src="/js/productdetails.js"></script>
+<script src="/js/common.js"></script>
+<script>
+    var jsUnknowError = "{{- $.Site.Params.jsUnknowError -}}";
+    var jsServerError = "{{- $.Site.Params.jsServerError -}}";
+    var jsTimeOut = "{{- $.Site.Params.jsTimeOut -}}";
+    var jsParseError = "{{- $.Site.Params.jsParseError -}}";
+    var jsSuccessful = "{{- $.Site.Params.jsSuccessful -}}";
+    var jsInvalidVcode = "{{- $.Site.Params.jsInvalidVcode -}}";
+    var langcode = "{{- $.Language.Lang -}}";
+    var verifyCodID = generateSessionId();
+    function checksizevalue(obj){
+        var sizevalue = obj.value;
+        if(sizevalue >5 || sizevalue < 0){
+            alert("{{- $.Site.Params.productdetailsizevalueerror -}}");
+           obj.value = 0;
+            return false;
+        }
+        var totalvalue = 0;
+        {{ range $index, $size := (split .Params.size ",") }}
+            var sizeObj = document.getElementById("sizeinput{{- $size -}}");
+            var othersizevalue =  parseInt(sizeObj.value);
+            totalvalue =  totalvalue +  othersizevalue
+        {{ end }}
+        if(totalvalue >5 || totalvalue < 0){
+            alert("{{- $.Site.Params.productdetailsizevalueerror -}}");
+            return false;
+        }
+        return true;
+    }
+    var verifycodeurl = "{{- $.Site.Params.verifycodeurl -}}";
+
+    function submitorder(){
+        var addressObj = document.getElementById("address");
+        if(addressObj.value.length < 5 ) {
+            alert({{- $.Site.Params.noshippingaddress -}});
+            addressObj.focus();
+            return;
+        }
+
+        var customernameObj = document.getElementById("customername");
+        if(customernameObj.value.length < 5 ) {
+            alert({{- $.Site.Params.noshippingaddress -}});
+            addressObj.focus();
+            return;
+        }
+        var mpObj = document.getElementById("mp");
+        var emailObj = document.getElementById("email");
+        var wechatObj = document.getElementById("wechat");
+        var skypeObj = document.getElementById("skype");
+        var whatsappObj = document.getElementById("whatsapp");
+        var mp = mpObj.value;
+        var email = emailObj.value;
+        var wechat = wechatObj.value;
+        var skype = skypeObj.value;
+        var whatsapp = whatsappObj.value;
+        if(mp.length <5 && email.length <5 && wechat.length <5 && skype.length <5 && whatsapp.length < 5){
+            alert({{- $.Site.Params.nocontactinformation -}});
+            mpObj.focus();
+            return;
+        }
+
+        var formObj = document.getElementById("orderform");
+        var formactionurl = formObj.getAttribute("action") + "?PHPSESSID=" + verifyCodID;
+        var actionType = formObj.getAttribute("method");
+        var respValue = formAjax("orderform",formactionurl,actionType);
+
+        alert(respValue["msg"]);
+        if(respValue["error"]){
+            formObj.focus();
+            return;
+        }
+        var orderTypeObj = document.getElementById("ordertype");
+        var orderType = orderTypeObj.value;
+        clickorderbutton(orderType);
+        window.location.replace("/" + langcode);
+        return;
+    }
+
+</script>
+<div class="productdetailsmain">
+   <div class=productdetailsleft>
+      <div class="productdetailstitle">
+         <img src="/images/super.png">
+         {{- .Title -}}
+      </div>
+       <div class="productdetailsimg">
+           <img src="{{- .Params.pic -}}">
+       </div>
+       <div class="productdetailsdivisionline">
+       </div>
+
+       <div class="productdetailkeyattributes">
+           Key attributes
+       </div>
+       <div class="productdetaiattributesitem">
+           Industry-specific attributes
+       </div>
+       <div>
+           <table width="100%" class="productdetailstable" >
+               <tr>
+                   <td  class="productdetailtdtitle">Technics</td> <td class="productdetailtdvalue">Automated cutting</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Style</td> <td class="productdetailtdvalue">{{- .Params.attributestyle -}}</td>
+               </tr>
+           </table>
+       </div>
+       <div class="productdetaiattributesitem">
+           Other attributes
+       </div>
+       <div>
+           <table width="100%" class="productdetailstable" >
+               <tr>
+                   <td  class="productdetailtdtitle">Printing Methods</td> <td class="productdetailtdvalue">Digital Print</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">7 days sample order lead time</td> <td class="productdetailtdvalue">Support</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Supply Type</td> <td class="productdetailtdvalue">OEM service</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Gender</td> <td class="productdetailtdvalue">{{- .Params.attributegender -}}</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Gender</td> <td class="productdetailtdvalue">{{- .Params.attributeproductfeature -}}</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Place of Origin</td> <td class="productdetailtdvalue">Shanghai, China</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Product Type</td> <td class="productdetailtdvalue">{{- .Params.attributeproductType -}}</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Age Group</td> <td class="productdetailtdvalue">{{- .Params.attributeagegroup -}}</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Brand Name</td> <td class="productdetailtdvalue">NEON</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Product name</td> <td class="productdetailtdvalue">{{- .Params.attributeproductname -}}</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Color</td> <td class="productdetailtdvalue">{{- .Params.attributeproductcolor -}}</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Logo</td> <td class="productdetailtdvalue">{{- .Params.attributelogo -}}</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Design</td> <td class="productdetailtdvalue">{{- .Params.attributeDesign -}}</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Printing</td> <td class="productdetailtdvalue">{{- .Params.attributePrinting -}}</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Printing</td> <td class="productdetailtdvalue">{{- .Params.attributeSize -}}</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">MOQ</td> <td class="productdetailtdvalue">10pcs</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Fabric</td> <td class="productdetailtdvalue">{{- .Params.attributeFabric -}}</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Function</td> <td class="productdetailtdvalue">{{- .Params.attributeFunction -}}</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Service</td> <td class="productdetailtdvalue">Custom OEM ODM</td>
+               </tr>
+           </table>
+       </div>
+       <div class="productdetaiattributesitem">
+           Packaging and delivery
+       </div>
+       <div>
+           <table width="100%" class="productdetailstable" >
+               <tr>
+                   <td  class="productdetailtdtitle">Packaging Details</td> <td class="productdetailtdvalue">one piece one bag</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Port</td> <td class="productdetailtdvalue">Shanghai</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Selling Units</td> <td class="productdetailtdvalue">Single item</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Single gross weight</td> <td class="productdetailtdvalue">0.500 kg</td>
+               </tr>
+           </table>
+       </div>
+       <div class="productdetaiattributesitem">
+           Supply Ability
+       </div>
+       <div>
+           <table width="100%" class="productdetailstable" >
+               <tr>
+                   <td  class="productdetailtdtitle">Supply Ability</td> <td class="productdetailtdvalue">3000 Piece/Pieces per Month</td>
+               </tr>
+
+           </table>
+       </div>
+       <div class="productdetaiattributesitem">
+           Packaging and delivery
+       </div>
+       <div>
+           <table width="100%" class="productdetailstable" >
+               <tr>
+                   <td  class="productdetailtdtitle">quantity(pieces)</td> <td class="productdetailtdvalue">1 - 10</td>
+                   <td class="productdetailtdvalue">11 - 500</td> <td class="productdetailtdvalue"> >500 </td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Lead time (days)</td> <td class="productdetailtdvalue">7</td>
+                   <td class="productdetailtdvalue">25</td> <td class="productdetailtdvalue"> >To be negotiated </td>
+               </tr>
+           </table>
+       </div>
+   </div>
+   <div class="productdetailsright">
+       <div class="productdetailpricelist">
+           Prices
+       </div >
+      <div class="productdetailprices">
+          {{ range $index, $price := .Params.prices }}
+            <div class="productdetailpriceitem">
+                <div class="productdetailpricedscope"> {{- $price.score -}}</div>
+                <div class="productdetailpricevalue"><b>{{- $price.price -}}</b></div>
+            </div>
+          {{ end }}
+      </div>
+
+       <div class="productdetailsdivisionline">
+       </div>
+
+       <div class="productdetailpricelist">
+           Variations
+       </div >
+       <div class="productdetailvariationtitle">
+           Total options:  <span>{{- len (split .Params.size ",") -}} Size </span>
+       </div>
+
+       <div class="productdetailvariationtitle">
+           <span>1. Size({{- len (split .Params.size ",") -}})</span>
+       </div>
+       <div class="productdetailvariationsizeline">
+           {{ range $index, $size := (split .Params.size ",") }}
+             <span>{{- $size -}}</span>
+           {{ end }}
+       </div>
+       <div class="productdetailsdivisionline">
+       </div>
+       <div class="productdetailpricelist">
+           Samples
+       </div >
+       <div class="productdetailsampleline">
+           Maximum order quantity: 5 piece
+       </div>
+       <div class="productdetailsampleline">
+           Sample price: <span> $50.00/piece </span>
+       </div>
+       <div class="productdetailordersampleline">
+           <a href="javascript:void(0)" onclick="clickorderbutton(0)"> <div class="productdetailbutton"> {{- $.Site.Params.ordersamplebuttontitle -}} </div></a>
+       </div>
+       <div class="productdetailsdivisionline">
+       </div>
+       <div class="productdetailordersampleline">
+           <a href="javascript:void(0)" onclick="clickorderbutton(1)"> <div class="productdetailbutton"> {{- $.Site.Params.orderstartrequestbuttontitle -}} </div></a>
+           <a href="/{{- $.Language.Lang -}}/contact/" > <div class="productdetailbutton"> {{- $.Site.Params.contactus -}} </div></a>
+       </div>
+   </div>
+</div>
+
+<div id="productdetailordersample" class="productdetailordersample">
+    <div class="productdetaipopformtitleline">
+        <table class="productdetaipopformtitletable">
+            <tr>
+                <td>Select variations and quantity</td>
+                <td class="productdetaipopformtitletableflagtd">
+                    <a href="javascript:void(0)" onclick="clickorderbutton()">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="productdetaipopformtitleline" id="pricebeforshipping">
+        <div class="productdetailpopformsecondarytitle">
+            Price before shipping
+        </div>
+    </div>
+    <form name="orderform" action="{{- $.Site.Params.sendmailurl -}}" method="post" id="orderform">
+        <input type="hidden" name="formtype" value="order">
+        <input type="hidden" name="ordertype" id="ordertype" value="0">
+    <div class="productdetailsampleline" id="maximumorderquantity">
+        Maximum order quantity: 5 piece
+    </div>
+    <div class="productdetailsampleline" id="sampleprice">
+        Sample price: <span> $50.00/piece </span>
+    </div>
+
+    <div class="productdetailvariationtitle">
+        <span>Size({{- len (split .Params.size ",") -}})</span>
+    </div>
+    <div class="productdetailvariationsizeline">
+        {{ range $index, $size := (split .Params.size ",") }}
+        <div class="productdetailpopformordersamplesizeline">
+        <div class="productdetailpopformordersamplesizetitle">{{- $size -}}</div>
+        <div class="productdetailpopformordersamplesizevalue"> $50.00 </div>
+        <div class="productdetailpopformordersamplesizeinput"><input id="sizeinput{{- $size -}}" name="{{- $size -}}" value="0" size="5" onblur="checksizevalue(this)"></div>
+        </div>
+        {{ end }}
+    </div>
+    <div class="productdetaipopformtitleline">
+        <table>
+            <tr>
+                <td><i class="fa fa-map-marker" aria-hidden="true"></i></td>
+                <td><input name="address"  id="address" class="productdetailpopforminput" size="30" placeholder="{{- $.Site.Params.shippingaddress -}}"></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-user" aria-hidden="true"></i></td>
+                <td><input name="customername" id="customername" class="productdetailpopforminput" size="30" placeholder="{{- $.Site.Params.yourname -}}"></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-home" aria-hidden="true"></i></td>
+                <td> <input name="organization" class="productdetailpopforminput" size="30" placeholder="{{- $.Site.Params.organizationname -}}"></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-mobile" aria-hidden="true"></i></td>
+                <td><input name="mp" id="mp" class="productdetailpopforminput" size="30" placeholder="{{- $.Site.Params.mobile -}}"></td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-envelope" aria-hidden="true"></i></td>
+                <td><input name="email" id="email" class="productdetailpopforminput" size="30" placeholder="{{- $.Site.Params.email -}}"></td>
+            </tr>
+            <tr>
+                <td><i class="fab fa-skype" aria-hidden="true"></i></td>
+                <td><input name="Wechat" id="wechat" class="productdetailpopforminput" size="30" placeholder="{{- $.Site.Params.wechat -}}"></td>
+            </tr>
+            <tr>
+                <td><i class="fab fa-weixin" aria-hidden="true"></i></td>
+                <td><input name="skype" id="skype" class="productdetailpopforminput" size="30" placeholder="{{- $.Site.Params.skype -}}"></td>
+            </tr>
+            <tr>
+                <td><i class="fab fa-whatsapp" aria-hidden="true"></i></td>
+                <td><input name="WhatsApp" id="whatsapp" class="productdetailpopforminput" size="30" placeholder="{{- $.Site.Params.whatsApp -}}"></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-id-card" aria-hidden="true"></i></td>
+                <td><textarea  name="ordernote" class="productdetailpopformtextarea" placeholder="{{- $.Site.Params.ordernote -}}" id="ordernote"></textarea></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-lock" aria-hidden="true"></i></td>
+                <td><input type="text" name="vcode" class="productdetailpopforminput" size="30" placeholder="{{- $.Site.Params.verifycodemsg -}}" id="vcode">
+                    <a href="javascript:void(0);" onclick="refreshverifycode();"><img src="" class="verifycodeurl" id="verifiycode"> </a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="productdetailordersampleline">
+        <a href="javascript:void(0)" onclick="submitorder()"> <div class="productdetailbutton"> {{- $.Site.Params.sendButtontitle -}} </div></a>
+        <a href="javascript:void(0)" onclick="clickorderbutton()"> <div class="productdetailbutton"> {{- $.Site.Params.closeButtontitle -}} </div></a>
+    </div>
+    </form>
+</div>
+
+
+{{ end }}
