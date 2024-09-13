@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.neonsports.cn/en/products/basketball_details20240909001/</loc>
+    <lastmod>2024-09-09T11:02:02+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://www.neonsports.cn/zh/products/basketball_details20240909001/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://www.neonsports.cn/en/products/basketball_details20240909001/"
+                />
+  </url><url>
     <loc>https://www.neonsports.cn/en/faq/</loc>
     <lastmod>2024-08-25T10:29:40+08:00</lastmod>
     <xhtml:link
@@ -41,17 +54,17 @@
                 href="https://www.neonsports.cn/en/contact/"
                 />
   </url><url>
-    <loc>https://www.neonsports.cn/en/products/customization/</loc>
+    <loc>https://www.neonsports.cn/en/products/custom/</loc>
     <lastmod>2024-07-28T10:28:16+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="https://www.neonsports.cn/zh/products/customization/"
+                href="https://www.neonsports.cn/zh/products/custom/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://www.neonsports.cn/en/products/customization/"
+                href="https://www.neonsports.cn/en/products/custom/"
                 />
   </url><url>
     <loc>https://www.neonsports.cn/en/products/wrestling/</loc>
