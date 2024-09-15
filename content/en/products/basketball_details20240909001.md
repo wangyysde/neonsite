@@ -17,7 +17,6 @@ attributeSize = 'Accept Customzied Size'
 attributeFabric = '100% Polyester Breathable Mesh'
 attributeFunction = 'Quick Dry Breathable Basketball Uniforms'
 size = 'XS,S,M,L,XL,XXL'
-
 [params]
   pic = '/images/products/basketball-1.png'
   [parmas.prices]
