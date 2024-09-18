@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Football_details20240918004 | 上海聚余服饰有限公司</title>
+
+<link rel="stylesheet"  href="/css/common.css" />
+<link rel="stylesheet" media="screen and (max-width: 600px)" href="/css/tiny_main.css" />
+<link rel="stylesheet" media="screen and (min-width: 1221px)" href="/css/big_main.css" />
+<link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 900px)" href="/css/small_main.css" />
+<link rel="stylesheet" media="screen and (min-width: 901px) and (max-width: 1220px)" href="/css/medium_main.css" />
+<link rel="stylesheet" href="/css/all.min.min.c1fb7484bf22344d06bc60d47674585fea13a654ae76d53e8ddd605844cb5463.css" integrity="sha256-wft0hL8iNE0GvGDUdnRYX&#43;oTplSudtU&#43;jd1gWETLVGM=" crossorigin="anonymous">
+
+<link rel="icon" href="/favicon.png"  />
+<script src="/js/jquery-3.6.0.min.js" id="jquery"></script>
+
+</head>
+<body>
+  <header>
+    <div class="mobile_header">
+    <div class="logo_container_mobile"><img src="/images/logo_73.png" title="上海聚余服饰有限公司"></div>
+    <div class="companyname_container_mobile">
+        
+        <img src="/images/name-cn.png" >
+        
+    </div>
+    <div class="language_navigation_mobile">
+        <i class="fas fa-globe"></i>
+        <li>
+            
+            <a aria-label="icon" href="https://www.neonsports.cn/en/"  target="_self">
+                <span>English</span>
+            </a>
+            
+        </li>
+    </div>
+</div>
+<div class="header">
+    <div class="logo_container"><img src="/images/logo_73.png" title="上海聚余服饰有限公司"></div>
+    <div class="companyname_container">
+        
+        <img src="/images/name-cn.png" >
+        
+    </div>
+    <div class="menu_div">
+        <li class="headermenuli_tiny">
+            
+               <a href="/zh/">
+            
+           网站首页
+          </a>
+        </li>
+        
+        <li class="headermenuli_medium">
+            
+               <a href="/zh/company/">
+            
+           公司简介
+          </a>
+        </li>
+        
+        <li class="headermenuli_medium">
+            
+               <a href="/zh/products/">
+            
+           产品中心
+          </a>
+        </li>
+        
+        <li class="headermenuli_tiny">
+            
+               <a href="/zh/products/custom/">
+            
+           高端定制
+          </a>
+        </li>
+        
+        <li class="headermenuli_small">
+            
+               <a href="/zh/agent/">
+            
+           诚招代理
+          </a>
+        </li>
+        
+        <li class="headermenuli_tiny">
+            
+               <a href="/zh/contact/">
+            
+           联系我们
+          </a>
+        </li>
+        
+        <li class="headermenuli_medium">
+            
+               <a href="/zh/faq/">
+            
+           常见问题
+          </a>
+        </li>
+        
+
+    </div>
+
+    <div class="language_navigation_big">
+
+            <li>
+                
+                <a aria-label="icon" href="https://www.neonsports.cn/en/"  target="_self">
+                    <i class="fas fa-globe"></i>
+                    <span>English</span>
+                </a>
+                
+            </li>
+    </div>
+</div>
+
+  </header>
+  <main>
+    
+<script src="/js/productdetails.js"></script>
+<script src="/js/common.js"></script>
+<script>
+    var jsUnknowError = "未知错误";
+    var jsServerError = "服务器处理错误";
+    var jsTimeOut = "网络超时";
+    var jsParseError = "解析错误";
+    var jsSuccessful = "数据发送成功";
+    var jsInvalidVcode = "验证码错误";
+    var langcode = "zh";
+    var verifyCodID = generateSessionId();
+    function checksizevalue(obj){
+        var sizevalue = obj.value;
+        if(sizevalue >5 || sizevalue < 0){
+            alert("每个样品订单最多可以订购5件");
+           obj.value = 0;
+            return false;
+        }
+        var totalvalue = 0;
+        
+            var sizeObj = document.getElementById("sizeinputXS");
+            var othersizevalue =  parseInt(sizeObj.value);
+            totalvalue =  totalvalue +  othersizevalue
+        
+            var sizeObj = document.getElementById("sizeinputS");
+            var othersizevalue =  parseInt(sizeObj.value);
+            totalvalue =  totalvalue +  othersizevalue
+        
+            var sizeObj = document.getElementById("sizeinputM");
+            var othersizevalue =  parseInt(sizeObj.value);
+            totalvalue =  totalvalue +  othersizevalue
+        
+            var sizeObj = document.getElementById("sizeinputL");
+            var othersizevalue =  parseInt(sizeObj.value);
+            totalvalue =  totalvalue +  othersizevalue
+        
+            var sizeObj = document.getElementById("sizeinputXL");
+            var othersizevalue =  parseInt(sizeObj.value);
+            totalvalue =  totalvalue +  othersizevalue
+        
+            var sizeObj = document.getElementById("sizeinputXXL");
+            var othersizevalue =  parseInt(sizeObj.value);
+            totalvalue =  totalvalue +  othersizevalue
+        
+        if(totalvalue >5 || totalvalue < 0){
+            alert("每个样品订单最多可以订购5件");
+            return false;
+        }
+        return true;
+    }
+    var verifycodeurl = "https:\/\/www.sysadm.cn\/vcode.php";
+
+    function submitorder(){
+        var addressObj = document.getElementById("address");
+        if(addressObj.value.length < 5 ) {
+            alert("请输入货物收货地址");
+            addressObj.focus();
+            return;
+        }
+
+        var customernameObj = document.getElementById("customername");
+        if(customernameObj.value.length < 5 ) {
+            alert("请输入货物收货地址");
+            addressObj.focus();
+            return;
+        }
+        var mpObj = document.getElementById("mp");
+        var emailObj = document.getElementById("email");
+        var wechatObj = document.getElementById("wechat");
+        var skypeObj = document.getElementById("skype");
+        var whatsappObj = document.getElementById("whatsapp");
+        var mp = mpObj.value;
+        var email = emailObj.value;
+        var wechat = wechatObj.value;
+        var skype = skypeObj.value;
+        var whatsapp = whatsappObj.value;
+        if(mp.length <5 && email.length <5 && wechat.length <5 && skype.length <5 && whatsapp.length < 5){
+            alert("请输入至少一个联系方式");
+            mpObj.focus();
+            return;
+        }
+
+        var formObj = document.getElementById("orderform");
+        var formactionurl = formObj.getAttribute("action") + "?PHPSESSID=" + verifyCodID;
+        var actionType = formObj.getAttribute("method");
+        var respValue = formAjax("orderform",formactionurl,actionType);
+
+        alert(respValue["msg"]);
+        if(respValue["error"]){
+            formObj.focus();
+            return;
+        }
+        var orderTypeObj = document.getElementById("ordertype");
+        var orderType = orderTypeObj.value;
+        clickorderbutton(orderType);
+        window.location.replace("/" + langcode);
+        return;
+    }
+
+</script>
+<div class="productdetailsmain">
+   <div class=productdetailsleft>
+      <div class="productdetailstitle">
+         <img src="/images/super.png">Football_details20240918004</div>
+       <div class="productdetailsimg">
+           <img src="/images/products/football-4.png">
+       </div>
+       <div class="productdetailsdivisionline">
+       </div>
+
+       <div class="productdetailkeyattributes">
+           主要指标
+       </div>
+       <div class="productdetaiattributesitem">
+           行业属性
+       </div>
+       <div>
+           <table width="90%" class="productdetailstable" >
+               <tr>
+                   <td  class="productdetailtdtitle">工艺</td> <td class="productdetailtdvalue">自动裁剪</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">款式</td> <td class="productdetailtdvalue">套装</td>
+               </tr>
+           </table>
+       </div>
+       <div class="productdetaiattributesitem">
+           其它特性
+       </div>
+       <div>
+           <table width="90%" class="productdetailstable" >
+               <tr>
+                   <td  class="productdetailtdtitle">印花方法</td> <td class="productdetailtdvalue">数字印花</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">7天样品订单交货</td> <td class="productdetailtdvalue">支持</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">供货类型</td> <td class="productdetailtdvalue">OEM供货</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">适用性别</td> <td class="productdetailtdvalue">男女适用</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">产品特性</td> <td class="productdetailtdvalue">足球球衣,数字印花,透气,刺绣,足球衬衫,耐用,V领, 可定制</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">产地</td> <td class="productdetailtdvalue">中国上海</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">产品类型</td> <td class="productdetailtdvalue">足球队服</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">适用人群</td> <td class="productdetailtdvalue">所有年龄段</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">品牌名称</td> <td class="productdetailtdvalue">聚余</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">产品名称</td> <td class="productdetailtdvalue">足球队服</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">颜色</td> <td class="productdetailtdvalue">定制颜色</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Logo</td> <td class="productdetailtdvalue">接受客户Logo</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">设计</td> <td class="productdetailtdvalue">定制足球队服设计</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">支持的印花方法</td> <td class="productdetailtdvalue">热升华-刺绣</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">尺寸</td> <td class="productdetailtdvalue">接受定制尺寸</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">订单起订量</td> <td class="productdetailtdvalue">10pcs</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">面料</td> <td class="productdetailtdvalue">100%涤纶透气网孔</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">功能性</td> <td class="productdetailtdvalue">快干透气篮球服</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">服务</td> <td class="productdetailtdvalue">OEM和ODM定制</td>
+               </tr>
+           </table>
+       </div>
+       <div class="productdetaiattributesitem">
+           包装和发货
+       </div>
+       <div>
+           <table width="90%" class="productdetailstable" >
+               <tr>
+                   <td  class="productdetailtdtitle">包装情况</td> <td class="productdetailtdvalue">一件(套)一包装</td>
+               </tr>
+
+               <tr>
+                   <td  class="productdetailtdtitle">单位</td> <td class="productdetailtdvalue">件(套)</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">毛重</td> <td class="productdetailtdvalue">0.500 kg</td>
+               </tr>
+           </table>
+       </div>
+       <div class="productdetaiattributesitem">
+           供货能力
+       </div>
+       <div>
+           <table width="90%" class="productdetailstable" >
+               <tr>
+                   <td  class="productdetailtdtitle">供货能力</td> <td class="productdetailtdvalue">每月3000件(套)</td>
+               </tr>
+
+           </table>
+       </div>
+       <div class="productdetaiattributesitem">
+           交货周期
+       </div>
+       <div>
+           <table width="90%" class="productdetailstable" >
+               <tr>
+                   <td  class="productdetailtdtitle">数量(件/套)</td> <td class="productdetailtdvalue">1 - 10</td>
+                   <td class="productdetailtdvalue">11 - 500</td> <td class="productdetailtdvalue"> >500 </td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">交期</td> <td class="productdetailtdvalue">7</td>
+                   <td class="productdetailtdvalue">25</td> <td class="productdetailtdvalue"> 按订单数量每单协商 </td>
+               </tr>
+           </table>
+       </div>
+   </div>
+   <div class="productdetailsright">
+       
+       <div class="productdetailsdivisionline">
+       </div>
+
+       <div class="productdetailpricelist">可选</div >
+       <div class="productdetailvariationtitle">所有选项:  <span>6尺寸</span>
+       </div>
+
+       <div class="productdetailvariationtitle">
+           <span>尺寸(6)</span>
+       </div>
+       <div class="productdetailvariationsizeline">
+           
+             <span>XS</span>
+           
+             <span>S</span>
+           
+             <span>M</span>
+           
+             <span>L</span>
+           
+             <span>XL</span>
+           
+             <span>XXL</span>
+           
+       </div>
+       <div class="productdetailsdivisionline">
+       </div>
+       <div class="productdetailpricelist">样品</div >
+       <div class="productdetailsampleline">
+           最多可订购样品数量: 5 件
+       </div>
+       <div class="productdetailsampleline">
+           样品价格: <span> ￥300.00/件 </span>
+       </div>
+       <div class="productdetailordersampleline">
+           <a href="javascript:void(0)" onclick="clickorderbutton(0)"> <div class="productdetailbutton">订购样品</div></a>
+       </div>
+       <div class="productdetailsdivisionline">
+       </div>
+       <div class="productdetailordersampleline">
+           <a href="javascript:void(0)" onclick="clickorderbutton(1)"> <div class="productdetailbutton">订购</div></a>
+           <a href="/zh/contact/" > <div class="productdetailbutton">联系我们</div></a>
+       </div>
+   </div>
+</div>
+
+<div id="productdetailordersample" class="productdetailordersample">
+    <div class="productdetaipopformtitleline">
+        <table class="productdetaipopformtitletable">
+            <tr>
+                <td>选择尺码和数量</td>
+                <td class="productdetaipopformtitletableflagtd">
+                    <a href="javascript:void(0)" onclick="clickorderbutton()">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <form name="orderform" action="https://www.sysadm.cn/sendemail.php" method="post" id="orderform">
+        <input type="hidden" name="formtype" value="order">
+        <input type="hidden" name="ordertype" id="ordertype" value="0">
+    <div class="productdetailsampleline" id="maximumorderquantity">
+        最多可订购样品数量: 5 件(套)
+    </div>
+    <div class="productdetailsampleline" id="sampleprice">
+        样品价格: <span> ￥300.00/件(套) </span>
+    </div>
+
+    <div class="productdetailvariationtitle">
+        <span>尺寸(6)</span>
+    </div>
+    <div class="productdetailvariationsizeline">
+        
+        <div class="productdetailpopformordersamplesizeline">
+        <div class="productdetailpopformordersamplesizetitle">XS</div>
+        <div class="productdetailpopformordersamplesizevalue"> $50.00 </div>
+        <div class="productdetailpopformordersamplesizeinput"><input id="sizeinputXS" name="XS" value="0" size="5" onblur="checksizevalue(this)"></div>
+        </div>
+        
+        <div class="productdetailpopformordersamplesizeline">
+        <div class="productdetailpopformordersamplesizetitle">S</div>
+        <div class="productdetailpopformordersamplesizevalue"> $50.00 </div>
+        <div class="productdetailpopformordersamplesizeinput"><input id="sizeinputS" name="S" value="0" size="5" onblur="checksizevalue(this)"></div>
+        </div>
+        
+        <div class="productdetailpopformordersamplesizeline">
+        <div class="productdetailpopformordersamplesizetitle">M</div>
+        <div class="productdetailpopformordersamplesizevalue"> $50.00 </div>
+        <div class="productdetailpopformordersamplesizeinput"><input id="sizeinputM" name="M" value="0" size="5" onblur="checksizevalue(this)"></div>
+        </div>
+        
+        <div class="productdetailpopformordersamplesizeline">
+        <div class="productdetailpopformordersamplesizetitle">L</div>
+        <div class="productdetailpopformordersamplesizevalue"> $50.00 </div>
+        <div class="productdetailpopformordersamplesizeinput"><input id="sizeinputL" name="L" value="0" size="5" onblur="checksizevalue(this)"></div>
+        </div>
+        
+        <div class="productdetailpopformordersamplesizeline">
+        <div class="productdetailpopformordersamplesizetitle">XL</div>
+        <div class="productdetailpopformordersamplesizevalue"> $50.00 </div>
+        <div class="productdetailpopformordersamplesizeinput"><input id="sizeinputXL" name="XL" value="0" size="5" onblur="checksizevalue(this)"></div>
+        </div>
+        
+        <div class="productdetailpopformordersamplesizeline">
+        <div class="productdetailpopformordersamplesizetitle">XXL</div>
+        <div class="productdetailpopformordersamplesizevalue"> $50.00 </div>
+        <div class="productdetailpopformordersamplesizeinput"><input id="sizeinputXXL" name="XXL" value="0" size="5" onblur="checksizevalue(this)"></div>
+        </div>
+        
+    </div>
+    <div class="productdetaipopformtitleline">
+        <table>
+            <tr>
+                <td><i class="fa fa-map-marker" aria-hidden="true"></i></td>
+                <td><input name="address"  id="address" class="productdetailpopforminput" size="30" placeholder="货物收货地址"></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-user" aria-hidden="true"></i></td>
+                <td><input name="customername" id="customername" class="productdetailpopforminput" size="30" placeholder="您的姓名"></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-home" aria-hidden="true"></i></td>
+                <td> <input name="organization" class="productdetailpopforminput" size="30" placeholder="组织名称"></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-mobile" aria-hidden="true"></i></td>
+                <td><input name="mp" id="mp" class="productdetailpopforminput" size="30" placeholder="手机或电话号码"></td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-envelope" aria-hidden="true"></i></td>
+                <td><input name="email" id="email" class="productdetailpopforminput" size="30" placeholder="电子邮箱地址"></td>
+            </tr>
+            <tr>
+                <td><i class="fab fa-skype" aria-hidden="true"></i></td>
+                <td><input name="Wechat" id="wechat" class="productdetailpopforminput" size="30" placeholder="微信号码"></td>
+            </tr>
+            <tr>
+                <td><i class="fab fa-weixin" aria-hidden="true"></i></td>
+                <td><input name="skype" id="skype" class="productdetailpopforminput" size="30" placeholder="Skype"></td>
+            </tr>
+            <tr>
+                <td><i class="fab fa-whatsapp" aria-hidden="true"></i></td>
+                <td><input name="WhatsApp" id="whatsapp" class="productdetailpopforminput" size="30" placeholder="WhatsApp"></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-id-card" aria-hidden="true"></i></td>
+                <td><textarea  name="ordernote" class="productdetailpopformtextarea" placeholder="订单留言" id="ordernote"></textarea></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-lock" aria-hidden="true"></i></td>
+                <td><input type="text" name="vcode" class="productdetailpopforminput" size="30" placeholder="请输入图片上的验证码" id="vcode">
+                    <a href="javascript:void(0);" onclick="refreshverifycode();"><img src="" class="verifycodeurl" id="verifiycode"> </a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="productdetailordersampleline">
+        <a href="javascript:void(0)" onclick="submitorder()"> <div class="productdetailbutton">发送</div></a>
+        <a href="javascript:void(0)" onclick="clickorderbutton()"> <div class="productdetailbutton">关闭</div></a>
+    </div>
+    </form>
+</div>
+
+
+
+  </main>
+  <footer>
+    <div class="footer_menu_div">
+     <li class="headermenuli_tiny">
+     
+        <a href="/zh/">
+     
+                网站首页
+            </a>
+    </li>
+    
+     <li class="headermenuli_medium">
+     
+        <a href="/zh/company/">
+     
+                公司简介
+            </a>
+    </li>
+    
+     <li class="headermenuli_medium">
+     
+        <a href="/zh/products/">
+     
+                产品中心
+            </a>
+    </li>
+    
+     <li class="headermenuli_tiny">
+     
+        <a href="/zh/products/custom/">
+     
+                高端定制
+            </a>
+    </li>
+    
+     <li class="headermenuli_small">
+     
+        <a href="/zh/agent/">
+     
+                诚招代理
+            </a>
+    </li>
+    
+     <li class="headermenuli_tiny">
+     
+        <a href="/zh/contact/">
+     
+                联系我们
+            </a>
+    </li>
+    
+     <li class="headermenuli_medium">
+     
+        <a href="/zh/faq/">
+     
+                常见问题
+            </a>
+    </li>
+    
+</div>
+
+<div class="footer_contact_list">
+    
+      <div>
+       <i class="fas fa-phone"></i>
+       
+       15391822710
+     </div>&nbsp;
+   
+      <div>
+       <i class="fas fa-envelope"></i>
+       
+          <a href="mailto:%20neonsports@163.com">
+      
+       neonsports@163.com
+          </a>
+       
+     </div>&nbsp;
+   
+      <div>
+       <i class="fab fa-weixin"></i>
+       
+       1539182270
+     </div>&nbsp;
+   
+      <div>
+       <i class="fab fa-qq"></i>
+       
+       150694131
+     </div>&nbsp;
+   
+</div>
+
+
+<div class="footer_copyright_div_big"> Copyright© 2014 - 2024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海聚余服饰有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;    版权所有</div>
+<div class="footer_copyright_div_small"> Copyright© 2014 - 2024&nbsp;上海聚余服饰有限公司</div>
+<div class="footer_copyright_div_tiny"> Copyright© 2014 - 2024&nbsp;上海聚余服饰有限公司</div>
+
+
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/66c2c928146b7af4a43bdeb9/1i5ke3ian';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+
+  </footer>
+</body>
+</html>

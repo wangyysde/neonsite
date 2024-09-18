@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Basketball_details20240916004 | Shanghai Neon SportsWear</title>
+
+<link rel="stylesheet"  href="/css/common.css" />
+<link rel="stylesheet" media="screen and (max-width: 600px)" href="/css/tiny_main.css" />
+<link rel="stylesheet" media="screen and (min-width: 1221px)" href="/css/big_main.css" />
+<link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 900px)" href="/css/small_main.css" />
+<link rel="stylesheet" media="screen and (min-width: 901px) and (max-width: 1220px)" href="/css/medium_main.css" />
+<link rel="stylesheet" href="/css/all.min.min.c1fb7484bf22344d06bc60d47674585fea13a654ae76d53e8ddd605844cb5463.css" integrity="sha256-wft0hL8iNE0GvGDUdnRYX&#43;oTplSudtU&#43;jd1gWETLVGM=" crossorigin="anonymous">
+
+<link rel="icon" href="/favicon.png"  />
+<script src="/js/jquery-3.6.0.min.js" id="jquery"></script>
+
+</head>
+<body>
+  <header>
+    <div class="mobile_header">
+    <div class="logo_container_mobile"><img src="/images/logo_73.png" title="Shanghai Neon SportsWear"></div>
+    <div class="companyname_container_mobile">
+        
+        <img src="/images/name-en.png"  >
+        
+    </div>
+    <div class="language_navigation_mobile">
+        <i class="fas fa-globe"></i>
+        <li>
+            
+            <a aria-label="icon" href="https://www.neonsports.cn/zh/"  target="_self">
+                <span>中文(简体)</span>
+            </a>
+            
+        </li>
+    </div>
+</div>
+<div class="header">
+    <div class="logo_container"><img src="/images/logo_73.png" title="Shanghai Neon SportsWear"></div>
+    <div class="companyname_container">
+        
+        <img src="/images/name-en.png"  >
+        
+    </div>
+    <div class="menu_div">
+        <li class="headermenuli_tiny">
+            
+               <a href="/en/">
+            
+           Home
+          </a>
+        </li>
+        
+        <li class="headermenuli_medium">
+            
+               <a href="/en/company/">
+            
+           Company
+          </a>
+        </li>
+        
+        <li class="headermenuli_medium">
+            
+               <a href="/en/products/">
+            
+           Products
+          </a>
+        </li>
+        
+        <li class="headermenuli_tiny">
+            
+               <a href="/en/products/custom/">
+            
+           Custom
+          </a>
+        </li>
+        
+        <li class="headermenuli_small">
+            
+               <a href="/en/agent/">
+            
+           Recruit Agents
+          </a>
+        </li>
+        
+        <li class="headermenuli_tiny">
+            
+               <a href="/en/contact/">
+            
+           Contact
+          </a>
+        </li>
+        
+        <li class="headermenuli_medium">
+            
+               <a href="/en/faq/">
+            
+           FAQ
+          </a>
+        </li>
+        
+
+    </div>
+
+    <div class="language_navigation_big">
+
+            <li>
+                
+                <a aria-label="icon" href="https://www.neonsports.cn/zh/"  target="_self">
+                    <i class="fas fa-globe"></i>
+                    <span>中文(简体)</span>
+                </a>
+                
+            </li>
+    </div>
+</div>
+
+  </header>
+  <main>
+    
+<script src="/js/productdetails.js"></script>
+<script src="/js/common.js"></script>
+<script>
+    var jsUnknowError = "Unknow Error";
+    var jsServerError = "Server Error";
+    var jsTimeOut = "TimeOut";
+    var jsParseError = "Parsing Error";
+    var jsSuccessful = "data has be sent";
+    var jsInvalidVcode = "Verify code Incorret";
+    var langcode = "en";
+    var verifyCodID = generateSessionId();
+    function checksizevalue(obj){
+        var sizevalue = obj.value;
+        if(sizevalue >5 || sizevalue < 0){
+            alert("Maximum order quantity 5 piece");
+           obj.value = 0;
+            return false;
+        }
+        var totalvalue = 0;
+        
+            var sizeObj = document.getElementById("sizeinputXS");
+            var othersizevalue =  parseInt(sizeObj.value);
+            totalvalue =  totalvalue +  othersizevalue
+        
+            var sizeObj = document.getElementById("sizeinputS");
+            var othersizevalue =  parseInt(sizeObj.value);
+            totalvalue =  totalvalue +  othersizevalue
+        
+            var sizeObj = document.getElementById("sizeinputM");
+            var othersizevalue =  parseInt(sizeObj.value);
+            totalvalue =  totalvalue +  othersizevalue
+        
+            var sizeObj = document.getElementById("sizeinputL");
+            var othersizevalue =  parseInt(sizeObj.value);
+            totalvalue =  totalvalue +  othersizevalue
+        
+            var sizeObj = document.getElementById("sizeinputXL");
+            var othersizevalue =  parseInt(sizeObj.value);
+            totalvalue =  totalvalue +  othersizevalue
+        
+            var sizeObj = document.getElementById("sizeinputXXL");
+            var othersizevalue =  parseInt(sizeObj.value);
+            totalvalue =  totalvalue +  othersizevalue
+        
+        if(totalvalue >5 || totalvalue < 0){
+            alert("Maximum order quantity 5 piece");
+            return false;
+        }
+        return true;
+    }
+    var verifycodeurl = "https:\/\/www.sysadm.cn\/vcode.php";
+
+    function submitorder(){
+        var addressObj = document.getElementById("address");
+        if(addressObj.value.length < 5 ) {
+            alert("Please input shipping address");
+            addressObj.focus();
+            return;
+        }
+
+        var customernameObj = document.getElementById("customername");
+        if(customernameObj.value.length < 5 ) {
+            alert("Please input shipping address");
+            addressObj.focus();
+            return;
+        }
+        var mpObj = document.getElementById("mp");
+        var emailObj = document.getElementById("email");
+        var wechatObj = document.getElementById("wechat");
+        var skypeObj = document.getElementById("skype");
+        var whatsappObj = document.getElementById("whatsapp");
+        var mp = mpObj.value;
+        var email = emailObj.value;
+        var wechat = wechatObj.value;
+        var skype = skypeObj.value;
+        var whatsapp = whatsappObj.value;
+        if(mp.length <5 && email.length <5 && wechat.length <5 && skype.length <5 && whatsapp.length < 5){
+            alert("Please enter at least one contact information");
+            mpObj.focus();
+            return;
+        }
+
+        var formObj = document.getElementById("orderform");
+        var formactionurl = formObj.getAttribute("action") + "?PHPSESSID=" + verifyCodID;
+        var actionType = formObj.getAttribute("method");
+        var respValue = formAjax("orderform",formactionurl,actionType);
+
+        alert(respValue["msg"]);
+        if(respValue["error"]){
+            formObj.focus();
+            return;
+        }
+        var orderTypeObj = document.getElementById("ordertype");
+        var orderType = orderTypeObj.value;
+        clickorderbutton(orderType);
+        window.location.replace("/" + langcode);
+        return;
+    }
+
+</script>
+<div class="productdetailsmain">
+   <div class=productdetailsleft>
+      <div class="productdetailstitle">
+         <img src="/images/super.png">Basketball_details20240916004</div>
+       <div class="productdetailsimg">
+           <img src="/images/products/basketball-5.png">
+       </div>
+       <div class="productdetailsdivisionline">
+       </div>
+
+       <div class="productdetailkeyattributes">
+           Key attributes
+       </div>
+       <div class="productdetaiattributesitem">
+           Industry-specific attributes
+       </div>
+       <div>
+           <table width="90%" class="productdetailstable" >
+               <tr>
+                   <td  class="productdetailtdtitle">Technics</td> <td class="productdetailtdvalue">Automated cutting</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Style</td> <td class="productdetailtdvalue">Singlet</td>
+               </tr>
+           </table>
+       </div>
+       <div class="productdetaiattributesitem">
+           Other attributes
+       </div>
+       <div>
+           <table width="90%" class="productdetailstable" >
+               <tr>
+                   <td  class="productdetailtdtitle">Printing Methods</td> <td class="productdetailtdvalue">Digital Print</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">7 days sample order lead time</td> <td class="productdetailtdvalue">Support</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Supply Type</td> <td class="productdetailtdvalue">OEM service</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Gender</td> <td class="productdetailtdvalue">Man</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Feature</td> <td class="productdetailtdvalue">Custom Logo  Color Dark Blue Basketball Tops Sleeveless</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Place of Origin</td> <td class="productdetailtdvalue">Shanghai, China</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Product Type</td> <td class="productdetailtdvalue">Sportswear</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Age Group</td> <td class="productdetailtdvalue">Kids</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Brand Name</td> <td class="productdetailtdvalue">NEON</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Product name</td> <td class="productdetailtdvalue">Basketball Singlet</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Color</td> <td class="productdetailtdvalue">Customized Colors</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Logo</td> <td class="productdetailtdvalue">Accept Customer Logo OEM</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Design</td> <td class="productdetailtdvalue">Custom Basketball Jerseys Designs</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Printing</td> <td class="productdetailtdvalue">Sublimation - Embroidery</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Size</td> <td class="productdetailtdvalue">Accept Customzied Size</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">MOQ</td> <td class="productdetailtdvalue">10pcs</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Fabric</td> <td class="productdetailtdvalue">100% Polyester Breathable Mesh</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Function</td> <td class="productdetailtdvalue">Quick Dry,Breathable,Basketball Uniform,Custom Logo,Kids,Tops Sleeveless</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Service</td> <td class="productdetailtdvalue">Custom OEM ODM</td>
+               </tr>
+           </table>
+       </div>
+       <div class="productdetaiattributesitem">
+           Packaging and delivery
+       </div>
+       <div>
+           <table width="90%" class="productdetailstable" >
+               <tr>
+                   <td  class="productdetailtdtitle">Packaging Details</td> <td class="productdetailtdvalue">one piece one bag</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Port</td> <td class="productdetailtdvalue">Shanghai</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Selling Units</td> <td class="productdetailtdvalue">Single item</td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Single gross weight</td> <td class="productdetailtdvalue">0.500 kg</td>
+               </tr>
+           </table>
+       </div>
+       <div class="productdetaiattributesitem">
+           Supply Ability
+       </div>
+       <div>
+           <table width="90%" class="productdetailstable" >
+               <tr>
+                   <td  class="productdetailtdtitle">Supply Ability</td> <td class="productdetailtdvalue">3000 Piece/Month</td>
+               </tr>
+
+           </table>
+       </div>
+       <div class="productdetaiattributesitem">
+           Lead time
+       </div>
+       <div>
+           <table width="90%" class="productdetailstable" >
+               <tr>
+                   <td  class="productdetailtdtitle">quantity(pieces)</td> <td class="productdetailtdvalue">1 - 10</td>
+                   <td class="productdetailtdvalue">11 - 500</td> <td class="productdetailtdvalue"> >500 </td>
+               </tr>
+               <tr>
+                   <td  class="productdetailtdtitle">Lead time (days)</td> <td class="productdetailtdvalue">7</td>
+                   <td class="productdetailtdvalue">25</td> <td class="productdetailtdvalue"> To be negotiated </td>
+               </tr>
+           </table>
+       </div>
+   </div>
+   <div class="productdetailsright">
+       
+       <div class="productdetailpricelist">Prices</div >
+      <div class="productdetailprices">
+          
+            <div class="productdetailpriceitem">
+                <div class="productdetailpricedscope">10 - 99 pieces</div>
+                <div class="productdetailpricevalue"><b>$9.50</b></div>
+            </div>
+          
+            <div class="productdetailpriceitem">
+                <div class="productdetailpricedscope">100 - 499 pieces</div>
+                <div class="productdetailpricevalue"><b>$9.00</b></div>
+            </div>
+          
+            <div class="productdetailpriceitem">
+                <div class="productdetailpricedscope">500 - 999 pieces</div>
+                <div class="productdetailpricevalue"><b>$8.00</b></div>
+            </div>
+          
+            <div class="productdetailpriceitem">
+                <div class="productdetailpricedscope">&gt;= 1000 pieces</div>
+                <div class="productdetailpricevalue"><b>$7.50</b></div>
+            </div>
+          
+      </div>
+      
+       <div class="productdetailsdivisionline">
+       </div>
+
+       <div class="productdetailpricelist">Variations</div >
+       <div class="productdetailvariationtitle">Total Options:  <span>6</span>
+       </div>
+
+       <div class="productdetailvariationtitle">
+           <span>(6)</span>
+       </div>
+       <div class="productdetailvariationsizeline">
+           
+             <span>XS</span>
+           
+             <span>S</span>
+           
+             <span>M</span>
+           
+             <span>L</span>
+           
+             <span>XL</span>
+           
+             <span>XXL</span>
+           
+       </div>
+       <div class="productdetailsdivisionline">
+       </div>
+       <div class="productdetailpricelist"></div >
+       <div class="productdetailsampleline">
+           Maximum order quantity: 5 piece
+       </div>
+       <div class="productdetailsampleline">
+           Sample price: <span> $50.00/piece </span>
+       </div>
+       <div class="productdetailordersampleline">
+           <a href="javascript:void(0)" onclick="clickorderbutton(0)"> <div class="productdetailbutton">Order Sample</div></a>
+       </div>
+       <div class="productdetailsdivisionline">
+       </div>
+       <div class="productdetailordersampleline">
+           <a href="javascript:void(0)" onclick="clickorderbutton(1)"> <div class="productdetailbutton">Order Request</div></a>
+           <a href="/en/contact/" > <div class="productdetailbutton">Contact Us</div></a>
+       </div>
+   </div>
+</div>
+
+<div id="productdetailordersample" class="productdetailordersample">
+    <div class="productdetaipopformtitleline">
+        <table class="productdetaipopformtitletable">
+            <tr>
+                <td>Select variations and quantity</td>
+                <td class="productdetaipopformtitletableflagtd">
+                    <a href="javascript:void(0)" onclick="clickorderbutton()">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="productdetaipopformtitleline" id="pricebeforshipping">
+        <div class="productdetailpopformsecondarytitle">
+            Price before shipping
+        </div>
+    </div>
+    <form name="orderform" action="https://www.sysadm.cn/sendemail.php" method="post" id="orderform">
+        <input type="hidden" name="formtype" value="order">
+        <input type="hidden" name="ordertype" id="ordertype" value="0">
+    <div class="productdetailsampleline" id="maximumorderquantity">
+        Maximum order quantity: 5 piece
+    </div>
+    <div class="productdetailsampleline" id="sampleprice">
+        Sample price: <span> $50.00/piece </span>
+    </div>
+
+    <div class="productdetailvariationtitle">
+        <span>Size(6)</span>
+    </div>
+    <div class="productdetailvariationsizeline">
+        
+        <div class="productdetailpopformordersamplesizeline">
+        <div class="productdetailpopformordersamplesizetitle">XS</div>
+        <div class="productdetailpopformordersamplesizevalue"> $50.00 </div>
+        <div class="productdetailpopformordersamplesizeinput"><input id="sizeinputXS" name="XS" value="0" size="5" onblur="checksizevalue(this)"></div>
+        </div>
+        
+        <div class="productdetailpopformordersamplesizeline">
+        <div class="productdetailpopformordersamplesizetitle">S</div>
+        <div class="productdetailpopformordersamplesizevalue"> $50.00 </div>
+        <div class="productdetailpopformordersamplesizeinput"><input id="sizeinputS" name="S" value="0" size="5" onblur="checksizevalue(this)"></div>
+        </div>
+        
+        <div class="productdetailpopformordersamplesizeline">
+        <div class="productdetailpopformordersamplesizetitle">M</div>
+        <div class="productdetailpopformordersamplesizevalue"> $50.00 </div>
+        <div class="productdetailpopformordersamplesizeinput"><input id="sizeinputM" name="M" value="0" size="5" onblur="checksizevalue(this)"></div>
+        </div>
+        
+        <div class="productdetailpopformordersamplesizeline">
+        <div class="productdetailpopformordersamplesizetitle">L</div>
+        <div class="productdetailpopformordersamplesizevalue"> $50.00 </div>
+        <div class="productdetailpopformordersamplesizeinput"><input id="sizeinputL" name="L" value="0" size="5" onblur="checksizevalue(this)"></div>
+        </div>
+        
+        <div class="productdetailpopformordersamplesizeline">
+        <div class="productdetailpopformordersamplesizetitle">XL</div>
+        <div class="productdetailpopformordersamplesizevalue"> $50.00 </div>
+        <div class="productdetailpopformordersamplesizeinput"><input id="sizeinputXL" name="XL" value="0" size="5" onblur="checksizevalue(this)"></div>
+        </div>
+        
+        <div class="productdetailpopformordersamplesizeline">
+        <div class="productdetailpopformordersamplesizetitle">XXL</div>
+        <div class="productdetailpopformordersamplesizevalue"> $50.00 </div>
+        <div class="productdetailpopformordersamplesizeinput"><input id="sizeinputXXL" name="XXL" value="0" size="5" onblur="checksizevalue(this)"></div>
+        </div>
+        
+    </div>
+    <div class="productdetaipopformtitleline">
+        <table>
+            <tr>
+                <td><i class="fa fa-map-marker" aria-hidden="true"></i></td>
+                <td><input name="address"  id="address" class="productdetailpopforminput" size="30" placeholder="Shipping Address"></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-user" aria-hidden="true"></i></td>
+                <td><input name="customername" id="customername" class="productdetailpopforminput" size="30" placeholder="Your Name"></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-home" aria-hidden="true"></i></td>
+                <td> <input name="organization" class="productdetailpopforminput" size="30" placeholder="Organization Name"></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-mobile" aria-hidden="true"></i></td>
+                <td><input name="mp" id="mp" class="productdetailpopforminput" size="30" placeholder="MP/Tel"></td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-envelope" aria-hidden="true"></i></td>
+                <td><input name="email" id="email" class="productdetailpopforminput" size="30" placeholder="Email Address"></td>
+            </tr>
+            <tr>
+                <td><i class="fab fa-skype" aria-hidden="true"></i></td>
+                <td><input name="Wechat" id="wechat" class="productdetailpopforminput" size="30" placeholder="Wechat"></td>
+            </tr>
+            <tr>
+                <td><i class="fab fa-weixin" aria-hidden="true"></i></td>
+                <td><input name="skype" id="skype" class="productdetailpopforminput" size="30" placeholder="Skype"></td>
+            </tr>
+            <tr>
+                <td><i class="fab fa-whatsapp" aria-hidden="true"></i></td>
+                <td><input name="WhatsApp" id="whatsapp" class="productdetailpopforminput" size="30" placeholder="WhatsApp"></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-id-card" aria-hidden="true"></i></td>
+                <td><textarea  name="ordernote" class="productdetailpopformtextarea" placeholder="Order Note" id="ordernote"></textarea></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-lock" aria-hidden="true"></i></td>
+                <td><input type="text" name="vcode" class="productdetailpopforminput" size="30" placeholder="Please input the verify code on the picture" id="vcode">
+                    <a href="javascript:void(0);" onclick="refreshverifycode();"><img src="" class="verifycodeurl" id="verifiycode"> </a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="productdetailordersampleline">
+        <a href="javascript:void(0)" onclick="submitorder()"> <div class="productdetailbutton">Sent</div></a>
+        <a href="javascript:void(0)" onclick="clickorderbutton()"> <div class="productdetailbutton">Close</div></a>
+    </div>
+    </form>
+</div>
+
+
+
+  </main>
+  <footer>
+    <div class="footer_menu_div">
+     <li class="headermenuli_tiny">
+     
+        <a href="/en/">
+     
+                Home
+            </a>
+    </li>
+    
+     <li class="headermenuli_medium">
+     
+        <a href="/en/company/">
+     
+                Company
+            </a>
+    </li>
+    
+     <li class="headermenuli_medium">
+     
+        <a href="/en/products/">
+     
+                Products
+            </a>
+    </li>
+    
+     <li class="headermenuli_tiny">
+     
+        <a href="/en/products/custom/">
+     
+                Custom
+            </a>
+    </li>
+    
+     <li class="headermenuli_small">
+     
+        <a href="/en/agent/">
+     
+                Recruit Agents
+            </a>
+    </li>
+    
+     <li class="headermenuli_tiny">
+     
+        <a href="/en/contact/">
+     
+                Contact
+            </a>
+    </li>
+    
+     <li class="headermenuli_medium">
+     
+        <a href="/en/faq/">
+     
+                FAQ
+            </a>
+    </li>
+    
+</div>
+
+<div class="footer_contact_list">
+    
+      <div>
+       <i class="fas fa-phone"></i>
+       
+       (&#43;86) 15391822710
+     </div>&nbsp;
+   
+      <div>
+       <i class="fas fa-envelope"></i>
+       
+          <a href="mailto:%20neonsports@163.com">
+      
+       neonsports@163.com
+          </a>
+       
+     </div>&nbsp;
+   
+      <div>
+       <i class="fab fa-weixin"></i>
+       
+       15391822710
+     </div>&nbsp;
+   
+      <div>
+       <i class="fab fa-skype"></i>
+       
+          <a href="https://join.skype.com/invite/rdX35sOidYO3">
+      
+       neonsports@163.com
+          </a>
+       
+     </div>&nbsp;
+   
+      <div>
+       <i class="fab fa-whatsapp"></i>
+       
+          <a href="https://api.whatsapp.com/send/?phone=8615391822710">
+      
+       &#43;8615391822710
+          </a>
+       
+     </div>&nbsp;
+   
+</div>
+
+
+<div class="footer_copyright_div_big"> Copyright© 2014 - 2024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shanghai Neon SportsWear Co;Ltd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;    All rights reserved</div>
+<div class="footer_copyright_div_small"> Copyright© 2014 - 2024&nbsp;Shanghai Neon SportsWear Co;Ltd</div>
+<div class="footer_copyright_div_tiny"> Copyright© 2014 - 2024&nbsp;Shanghai Neon SportsWear Co;Ltd</div>
+
+
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/66c2c928146b7af4a43bdeb9/1i5ke3ian';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+
+  </footer>
+</body>
+</html>

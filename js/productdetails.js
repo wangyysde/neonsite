@@ -11,7 +11,7 @@ function clickorderbutton(ordertype) {
         var pricebeforshippingObj = document.getElementById("pricebeforshipping");
         var maximumorderquantityObj = document.getElementById("maximumorderquantity");
         var samplepriceObj = document.getElementById("sampleprice");
-        ordersampleform.style.height = (windowheight - 150) + "px";
+        ordersampleform.style.height = (windowheight - 20) + "px";
         ordersampleform.style.display = "flow-root";
         if(ordertype == 0){
             if(pricebeforshippingObj) {
