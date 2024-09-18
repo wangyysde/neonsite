@@ -14,17 +14,25 @@ draft = true
       pic = '/images/products/basketball-1.png'
       pricescope = '$7.50 - $9.50'
     [params.products.1]
-      title = 'Basketball Uniform'
+      id = '20240916001'
+      title = 'Wholesale customize all-age fashionable team uniform high quality breathable basketball jersey'
       pic = '/images/products/basketball-2.png'
+      pricescope = '$7.50 - $9.50'
     [params.products.2]
-      title = 'Basketball-Black'
+      id = '20240916002'
+      title = 'Custom Logo Basketball Jersey Color Black  Sleeveless'
       pic = '/images/products/basketball-3.png'
+      pricescope = '$7.50 - $9.50'
     [params.products.3]
-      title = 'Basketball-Blue'
+      id = '20240916003'
+      title = 'Custom Wholesale Design Sublimation Basketball Kids Singlets Men Basketball Uniform Jersey'
       pic = '/images/products/basketball-4.png'
+      pricescope = '$7.50 - $9.50'
     [params.products.4]
-      title = 'Basketball Uniform'
+      id = '20240916004'
+      title = 'Basketball Jersey Custom Logo Basketball Jersey Color Dark Blue Basketball Tops Sleeveless'
       pic = '/images/products/basketball-5.png'
+      pricescope = '$7.50 - $9.50'
 +++
 
 

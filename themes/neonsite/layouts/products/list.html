@@ -12,7 +12,7 @@
         {{ range $index, $category := .Site.Params.products }}
 
         <div class="homecategoryitem" >
-            <a href="/{{- $.Language.Lang -}}/products/{{- $category.url -}}" target="_blank">
+            <a href="{{ $.Site.BaseURL }}{{- $.Language.Lang -}}/products/{{- $category.url -}}/" target="_blank">
                 <div>
                     <img src="{{- $category.pic -}} ">
                 </div>

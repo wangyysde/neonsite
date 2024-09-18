@@ -11,11 +11,11 @@
         <i class="fas fa-globe"></i>
         <li>
             {{ if eq .Language.Lang "en" }}
-            <a aria-label="icon" href="/zh"  target="_self">
+            <a aria-label="icon" href="{{ $.Site.BaseURL }}zh/"  target="_self">
                 <span>中文(简体)</span>
             </a>
             {{ else }}
-            <a aria-label="icon" href="/en"  target="_self">
+            <a aria-label="icon" href="{{ $.Site.BaseURL }}en/"  target="_self">
                 <span>English</span>
             </a>
             {{ end }}
@@ -55,12 +55,12 @@
 
             <li>
                 {{ if eq .Language.Lang "en" }}
-                <a aria-label="icon" href="/zh"  target="_self">
+                <a aria-label="icon" href="{{ $.Site.BaseURL }}zh/"  target="_self">
                     <i class="fas fa-globe"></i>
                     <span>中文(简体)</span>
                 </a>
                 {{ else }}
-                <a aria-label="icon" href="/en"  target="_self">
+                <a aria-label="icon" href="{{ $.Site.BaseURL }}en/"  target="_self">
                     <i class="fas fa-globe"></i>
                     <span>English</span>
                 </a>
